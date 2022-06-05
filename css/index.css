@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600&family=Freehand&family=Indie+Flower&family=Lobster&family=Lora&family=Nova+Mono&family=Oswald:wght@200;300&family=Overlock+SC&family=Oxygen+Mono&family=Oxygen:wght@300&family=Poppins:wght@100;200;300&family=Righteous&family=Roboto:wght@100;300;400;500;900&display=swap');
+@import url("boiler-plate.css");
+@import url("market.css");
+@import url("aboutus.css");
+@import url("signin.css");
+@import url("signup.css");
+@import url("footer.css");
+
+/*Fundlux landing page styles */
+.header-wrapper{
+background:url("../images/financial250\ 1.svg") center no-repeat;
+color:#fff;
+margin-bottom:4rem;
+position:relative;
+background-size:cover;
+}
+.aboutus-nav-header{
+margin-bottom:20rem;
+}
+.about-breadcrumb{
+color:#fff;
+display:block;
+padding:2.5rem;
+font-weight:800;
+font-size:2rem;
+}
+.nav-link{
+padding:2rem 3rem;
+}
+.nav-list{
+display:flex;
+flex-flow:row wrap;
+justify-content:flex-end;
+gap:2rem;
+}
+.nav-list a{
+color:#fff;
+font-size:80%;
+}
+.banner-section{
+padding:2rem 4rem;
+font-size:1.8rem;
+font-weight:700;
+}
+.bitcoin-logo-log{
+height:80px;
+background-color:teal;
+width:95%;
+border-radius:5px;
+margin:0 auto;
+padding:2rem;
+position:absolute;
+top:100%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+
+
+/* main section tyles */
+.main-site-section{
+ padding:2rem;
+ font-size:1.8rem;
+ font-weight:700;
+}
+.caption-style{
+font-weight:normal;
+color:hotpink
+}
+.get-started-button{
+    padding:0.4rem;
+    background: #BF8C09;
+    background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    color:#fff;
+    border-radius:5px;
+    font-weight:400;
+    font-size:0.9rem;
+    display:block;
+    text-align:center;
+    width:100px;
+    margin:1rem 0 8rem  0;
+    }
+
+    /* offeresd services section in main-site-section */
+    .service-lists-cards{
+    font-size:50%;
+    font-weight:normal;
+    display:flex;
+    flex-flow:row wrap;
+    /* gap:3rem; */
+    justify-content:space-between;
+    }
+   .invest-button{
+    padding:0.4rem;
+    background: #BF8C09;
+    background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    color:#fff;
+    border-radius:5px;
+    font-weight:400;
+    font-size:0.9rem;
+    display:inline-block;
+    width:100px;
+    } 
+    .offered-services h2{
+    text-align:center;
+    margin:0 0 2rem 0;
+    padding:0;
+    font-size:60%;
+    }
+    .card-container{
+    margin:0;
+    padding:1rem;
+    flex-basis:22%;
+    border:1px solid #ddd;
+    text-align:center;
+    border-radius:5px;
+    }
+    figcaption*{
+    margin:0.5rem;
+    } 
+
+/* Trade tools section styles */
+.trade-tools{
+font-size:60%;
+font-weight:normal;
+}
+
+/* media-section styles */
+.media-section{
+border:1px solid coral;
+}
+.media-empty-box{
+height:200px;
+background:#333;
+margin-bottom:2rem;
+}
+.media-invest-card{
+height:250px;
+background:#999;
+padding:10rem 0  0 0;
+}
+.media-invest-button{
+    padding:0.4rem;
+    color:#fff;
+    border-radius:5px;
+    background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    font-weight:400;
+    font-size:0.9rem;
+    display:block;
+    width:100px;
+    margin:0 auto;
+    text-align:center;
+}
+
+/* last section before footer  section*/
+.closing-section{
+/* border:1px solid red; */
+position: relative;
+}
+.empty-box-1,.empty-box-2{
+height:100px;
+}
+.empty-box-1{
+background:#ddd;
+}
+.empty-box-2{
+background:coral;
+}
+/* media queries styles */
+/* for tablet devices */
+@media(min-width:410px){
+/* site footer styles */
+
+.media-section{
+display:flex;
+flex-flow:wro wrap;
+gap:10rem;
+align-items:center;
+justify-content:center;
+}
+.media-invest-card{
+width:24%;
+}
+.media-empty-box{
+width:40%;
+}
+/* section styles */
+.closing-section{
+position: relative;
+margin-top:5rem;
+}
+.empty-box-2{
+position:absolute;
+top:50%;
+left:50%;
+z-index:1000;
+width:30%;
+height:240px;
+transform: translate(-50%,-50%);
+/* the transform property above is same as the code written below */
+/* margin-top:-130px;
+margin-left:-20%; */
+}
+.empty-box-1{
+width:80%;
+margin:0 auto;
+height:200px;
+}
+}
