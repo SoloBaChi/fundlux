@@ -1,7 +1,15 @@
-
-
-
 /*AboutMain styles */
+.aboutus-nav-header{
+margin-bottom:20rem;
+}
+.about-breadcrumb{
+color:#fff;
+display:block;
+padding:2.5rem;
+font-weight:800;
+font-size:2rem;
+}
+
 .text-section{
 margin:0;
 padding:2rem;

@@ -57,6 +57,17 @@ font-size:80%;
 display:block;
 text-align: center;
 margin-top:0.5rem;
+color:#000;
+position:relative;
+}
+.icon{
+/*border:1px solid red;*/
+position:absolute;
+top:0;
+left:24%;
+display:inline-block;
+padding:0.5rem;
+font-size:1rem;
 }
 .signin-form-body .input{
 padding:0.6rem;
@@ -66,7 +77,9 @@ border-radius:10px;
 box-shadow:none;
 border:none;
 background:#ddd;
-text-align:center;
+text-indent:2.6rem;
+font-size:0.7rem;
+font-weight:800;
 }
 /* .signin-form-body label::before{
 content:"\f002";
@@ -74,7 +87,7 @@ font-family:"FontAwesome";
 color:red;
 } */
 
-.sigin-form-footer{
+.signin-form-footer{
 color:#000;
 text-align:center;
 }
@@ -122,14 +135,14 @@ transform:translate(-50%,-50%);
 margin-bottom:8rem;
 }
 .signin-breadcrumb{
-margin-left:22%;
+margin-left:23%;
 }
-.sigin-form-footer{
+.signin-form-footer{
 color:#000;
 display:flex;
 justify-content:center;
 align-items:center;
-gap:16%;
+gap:14%;
 margin-top:1rem;
 }
 }

@@ -1,0 +1,102 @@
+.reachus-panel{
+background-color:#F9F9F9;
+width:95%;
+border-radius:5px;
+margin:0 auto;
+padding:1rem;
+position:absolute;
+top:140%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+.reachus-breadcrumb{
+color:#fff;
+display:block;
+padding:2.5rem;
+font-weight:800;
+font-size:2rem;
+height:100%;
+}
+.reachus-line-div{
+height:200px;
+}
+.access .fa{
+display:block;
+font-size:1.4rem;
+padding:0.5rem;
+text-align:center;
+}
+.access-row{
+display:flex;
+flex-flow:row wrap;
+justify-content:space-between;
+}
+.access{
+flex-basis:32%;
+text-align:center;
+}
+.reachus-panel .access + .access{
+border-left:0px solid #ddd;
+}
+.access:first-child{
+text-align:left;
+}
+.customer-feedback input,.customer-feedback textarea{
+text-align:center;
+padding:0.6rem;
+outline:none;
+box-shadow:none;
+border:1px solid #000;
+border-radius:8px;
+background:#ddd;
+width:80%;
+margin:0.5rem 0 0 0;
+}
+.customer-feedback textarea{
+height:80px;
+line-height:50px;
+overflow:hidden;
+}
+
+.customer-feedback .fa{
+display:block;
+color:#000;
+}
+.customer-feedback .chat-btn{
+font-size:0.8rem;
+background:brown;
+width:100%;
+font-weight:600;
+color:#fff;
+padding:0.6rem;
+border-radius:10px;
+display:inline-block;
+margin-top:0.5rem;
+text-align:center;
+}
+
+
+
+
+
+/*for tablet devices*/
+@media(min-width:410px){
+.reachus-panel{
+top:160%;
+}
+.reachus-line-div{
+height:200px;
+}
+/*.customer-feedback .chat-btn{
+width:80%;
+}*/
+
+}
+
+/*for desktop devices*/
+@media(min-width:810px){
+/*.reachus-panel{}
+*/
+.customer-feedback .chat-btn{
+width:50%;
+}

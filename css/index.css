@@ -4,6 +4,7 @@
 @import url("aboutus.css");
 @import url("signin.css");
 @import url("signup.css");
+@import url("contactus.css");
 @import url("footer.css");
 
 /*Fundlux landing page styles */
@@ -14,16 +15,7 @@ margin-bottom:4rem;
 position:relative;
 background-size:cover;
 }
-.aboutus-nav-header{
-margin-bottom:20rem;
-}
-.about-breadcrumb{
-color:#fff;
-display:block;
-padding:2.5rem;
-font-weight:800;
-font-size:2rem;
-}
+
 .nav-link{
 padding:2rem 3rem;
 }
