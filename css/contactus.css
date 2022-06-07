@@ -1,3 +1,8 @@
+.header-wrapper.reachus-wrapper{
+background:url("../images/market-bg-pic.svg") center no-repeat;
+background-size:cover;
+}
+
 .reachus-panel{
 background-color:#F9F9F9;
 width:95%;
@@ -5,7 +10,7 @@ border-radius:5px;
 margin:0 auto;
 padding:1rem;
 position:absolute;
-top:140%;
+top:245%;
 left:50%;
 transform:translate(-50%,-50%);
 }
@@ -18,7 +23,7 @@ font-size:2rem;
 height:100%;
 }
 .reachus-line-div{
-height:200px;
+height:650px;
 }
 .access .fa{
 display:block;
@@ -27,16 +32,13 @@ padding:0.5rem;
 text-align:center;
 }
 .access-row{
-display:flex;
-flex-flow:row wrap;
-justify-content:space-between;
+display:block;
+padding:1rem;
 }
 .access{
-flex-basis:32%;
 text-align:center;
-}
-.reachus-panel .access + .access{
-border-left:0px solid #ddd;
+margin:0 0 1rem 0;
+
 }
 .access:first-child{
 text-align:left;
@@ -65,10 +67,10 @@ color:#000;
 .customer-feedback .chat-btn{
 font-size:0.8rem;
 background:brown;
-width:100%;
+width:40%;
 font-weight:600;
 color:#fff;
-padding:0.6rem;
+padding:0.3rem;
 border-radius:10px;
 display:inline-block;
 margin-top:0.5rem;
@@ -82,10 +84,10 @@ text-align:center;
 /*for tablet devices*/
 @media(min-width:410px){
 .reachus-panel{
-top:160%;
+top:270%;
 }
 .reachus-line-div{
-height:200px;
+height:650px;
 }
 /*.customer-feedback .chat-btn{
 width:80%;
@@ -97,6 +99,27 @@ width:80%;
 @media(min-width:810px){
 /*.reachus-panel{}
 */
+.reachus-panel{
+top:170%;
+}
+.reachus-line-div{
+height:230px;
+}
+
+.reachus-panel .access + .access{
+border-left:2px solid #ddd;
+}
+
+.access-row{
+display:flex;
+flex-flow:row wrap;
+justify-content:space-between;
+}
+.access{
+flex-basis:32%;
+text-align:center;
+}
 .customer-feedback .chat-btn{
 width:50%;
+}
 }

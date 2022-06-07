@@ -35,7 +35,7 @@ font-size:1.4rem;
     border-bottom:1px solid #ddd;
     margin:0 0 1rem 0;
     }
-    .signup-panel-button .sign-in{
+    .signup-panel-button .sign-up{
      padding:1rem;
      display:block;
      flex-basis:50%;
@@ -43,11 +43,11 @@ font-size:1.4rem;
      font-size:85%;
      text-align:center;
      }
-     .signup-panel-button .sign-in:first-child{
+     .signup-panel-button .sign-up:first-child{
      border-right:1px solid #ddd ;
      }
-    .signup-panel-button .sign-in:hover,
-    .signup-panel-button .sign-in:focus
+    .signup-panel-button .sign-up:hover,
+    .signup-panel-button .sign-up:focus
     {
      background:#ddd;
      z-index:3;
@@ -93,7 +93,7 @@ font-size:1.4rem;
     width:30px;
     border-radius:5px;
     }
-    .sigin-form-footer{
+    .signup-form-footer{
     color:#000;
     text-align:center;
     margin-top:1rem;

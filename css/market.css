@@ -1,4 +1,8 @@
+.header-wrapper.market-wrapper{
+background:url("../images/market-bg-pic.svg") center no-repeat;
+background-size:cover;
+}
 .main-trade-view{
 height:200px;
-border:2px solid #fff;
+/*border:2px solid #fff;*/
 }
