@@ -32,8 +32,8 @@ font-weight:600;
 }
 .banner-section{
 padding:2rem 4rem;
-font-size:1.8rem;
-font-weight:700;
+font-size:3rem;
+font-weight:800;
 }
 .bitcoin-logo-log{
 height:80px;
@@ -76,12 +76,9 @@ color:hotpink
 
     /* offeresd services section in main-site-section */
     .service-lists-cards{
-    font-size:50%;
+    font-size:70%;
     font-weight:normal;
-    display:flex;
-    flex-flow:row wrap;
-    /* gap:3rem; */
-    justify-content:space-between;
+    margin:2rem 0;
     }
    .invest-button{
     padding:0.4rem;
@@ -97,13 +94,16 @@ color:hotpink
     .offered-services h2{
     text-align:center;
     margin:0 0 2rem 0;
-    padding:0;
-    font-size:60%;
+    font-size:70%;
+    }
+    .offered-services h3{
+    text-align:center;
+    font-size:70%;
+    font-weight:800;
     }
     .card-container{
-    margin:0;
-    padding:1rem;
-    flex-basis:22%;
+    margin:0 0 1.4rem 0;
+    padding:1.2rem;
     border:1px solid #ddd;
     text-align:center;
     border-radius:5px;
@@ -120,8 +120,20 @@ font-weight:normal;
 border:1px solid red;
 }
 .trade-tools img{
-width:100%;
-height:100%;
+width:40vw;
+height:50vh;
+animation: bouncing-img 1.5s  infinite;
+}
+@keyframes bouncing-img {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
 }
 /*.trade-tools-item{
 margin:0 0 2.6rem 0;
@@ -148,7 +160,7 @@ flex-basis:100%;
 
 /* media-section styles */
 .media-section{
-border:1px solid coral;
+margin:4rem 0 0 0;
 }
 .media-empty-box{
 height:200px;
@@ -202,10 +214,13 @@ display:flex;
 justify-content:center;
 }
 
-.latest-transaction{}
+.latest-transaction{
+margin:4rem 0;
+font-size:90%;
+}
 .latest-transaction .latest-items{
 border:1px solid green;
-padding:1rem;
+padding:0.6rem;
 border-radius:5px;
 overflow-y:scroll;
 max-height:250px;
@@ -225,32 +240,48 @@ border-radius:2px;
 margin:0;
 padding:0;
 }
+.latest > p {
+border:2px solid violet;
+font-size:1rem;
+}
 .latest-items figure{
-position:relative;
-border:1px solid forestgreen;
-margin:0 0 0.5rem 0;
+border:1px solid green;
+margin:0 0 1rem 0;
 padding:0.5rem;
 }
+.latest-items figure img{
+border-radius:6px;
+}
 .latest-items figcaption{
-position:absolute;
-right:0;
-top:5%;
-border:1px solid coral;
+border:1px solid red;
+}
+.items-caption span{
+ margin:0.4rem 0 0 0;
+ font-size:0.6rem;
+ display:block;
 }
 
 
 
 
 
-
-/* media queries styles */
+/* media queries styles 
 /* for tablet devices */
 @media(min-width:410px){
+
+.service-lists-cards{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+}
+.card-container{
+ flex-basis:24%;
+}
 /*trade section*/
 
 .media-section{
 display:flex;
-flex-flow:wro wrap;
+flex-flow:row wrap;
 gap:4%;
 align-items:center;
 justify-content:space-evenly;
@@ -293,7 +324,12 @@ gap:4%;
 .latest{
 flex-basis:48%;
 }
-
+.latest-items figure{
+display:flex;
+justify-content:space-between;
+align-items:center;
+border:1px solid pink;
+}
 
 }
 
@@ -302,6 +338,9 @@ flex-basis:48%;
 .nav-list{
  justify-content:flex-end;
  gap:2rem;
+}
+.card-container{
+flex-basis:24%;
 }
 .trade-tools{
 gap:4%;

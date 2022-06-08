@@ -51,7 +51,7 @@ margin:0 1rem;
 }
 .news-letter-box{
 text-align:right;
-border:1px solid gray;
+background:gray;
 padding:1rem 1.2rem;
 border-radius:5px;
 }
@@ -70,10 +70,11 @@ border-radius:4px;
 padding:0.4rem;
 text-align:center;
 font-size:0.5rem;
+background:#FEFEFE;
 }
 .join-button{
 padding:0.4rem;
-background:darkblue;
+background:#3A3FB9;
 border-radius:5px;
 box-shadow:none;
 border:none;

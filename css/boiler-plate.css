@@ -26,6 +26,11 @@ color:#000;
 font-size:1.2rem;
 display:block;
 }
-img{
+/*img{
 width:100%;
+}
+*/
+h1,h2,h3,h4,p{
+margin:0.5rem;
+padding:0;
 }

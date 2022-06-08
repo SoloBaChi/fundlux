@@ -10,6 +10,29 @@ font-weight:800;
 font-size:2rem;
 }
 
+.aboutus-log-panel{
+background-color:transparent;
+width:95%;
+border-radius:5px;
+margin:0 auto;
+padding:0;
+position:absolute;
+color:#000;
+top:154%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.aboutus-line-div{
+height:500px;
+}
+
+.aboutus.service-lists-cards{
+margin:0;
+}
+.aboutus-log-panel .card-container{
+background:#F9F9F9;
+}
 .text-section{
 margin:0;
 padding:2rem;
@@ -77,6 +100,12 @@ margin-left:0px;
 
 /* About media queries */
 @media(min-width:410px){
+.aboutus-log-panel{
+ top:120%;
+}
+.aboutus-line-div{
+height:160px;
+}
 .team-section-row{
 display:flex;
 flex-flow:row wrap;
@@ -114,6 +143,12 @@ margin:0;
 
 
 @media(min-width:810px){
+.aboutus-log-panel{
+ top:114%;
+}
+.aboutus-line-div{
+height:80px;
+}
 .team-section-box{
  flex-basis:22%;
  height:200px;

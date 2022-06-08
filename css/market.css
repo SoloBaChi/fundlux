@@ -2,7 +2,21 @@
 background:url("../images/market-bg-pic.svg") center no-repeat;
 background-size:cover;
 }
-.main-trade-view{
-height:200px;
+.market-line-div{
+height:700px;
 /*border:2px solid #fff;*/
+}
+.market-nav-header{
+margin-bottom:20rem;
+}
+.market-logo-log{
+background-color:#ddd;
+width:95%;
+border-radius:5px;
+margin:0 auto;
+padding:2rem;
+position:absolute;
+top:165%;
+left:50%;
+transform:translate(-50%,-50%);
 }
