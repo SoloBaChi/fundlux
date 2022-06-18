@@ -6,7 +6,9 @@ background-size:cover;
 padding:1rem 2rem;
 margin-top:3rem;
 color:#fff;
-
+}
+.footer-nav.index-footer-nav{
+margin:0;
 }
 .footer-nav a{
 color:#fff;
