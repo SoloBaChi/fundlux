@@ -8,6 +8,35 @@
 @import url("footer.css");
 
 /*Fundlux landing page styles */
+/*loading styles*/
+.loading-page{
+background:#efefea;
+height:100vh;
+width:100%;
+position:fixed;
+z-index:1000;
+display:flex;
+}
+.loading-page .fa{
+margin:auto;
+font-size:3rem;
+font-weight:800;
+color:darkgreen;
+}
+.loading-text{
+position:absolute;
+bottom:100px;
+left:0;
+width:100%;
+display:block;
+font-family:cursive;
+font-size:1.4rem;
+color:green;
+}
+.stop-loading{
+display:none;
+}
+
 .header-wrapper{
 background:url("../images/financial250\ 1.svg") center no-repeat;
 color:#fff;
@@ -248,51 +277,49 @@ transform:translate(-50%,-50%);
 }
 
 /*chooseus section check the preceeding code*/
-/* media-section styles */
-.media-section{
-margin:4rem 0 0 0;
+/*chooseus core section*/
+.chooseus-core-section{
+font-size:1rem;
+font-weight:300;
+text-align:center;
+background:#010216;
+color:#fff;
+padding:2rem 0;
 }
-.media-empty-box{
-height:200px;
-background:#333;
-margin-bottom:2rem;
+.chooseus-core-section figure{
+margin:0 0 2rem 0;
 }
-.media-invest-card{
-height:250px;
-background:#999;
-padding:10rem 0  0 0;
+.chooseus-core-section h2{
+text-transform:uppercase;
+font-weight:900;
+font-size:1.2rem;
 }
-.media-invest-button{
-    padding:0.4rem;
-    color:#fff;
-    border-radius:5px;
-    background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    font-weight:400;
-    font-size:0.9rem;
-    display:block;
-    width:100px;
-    margin:0 auto;
-    text-align:center;
+.chooseus-core-section p{
+ font-weight:400;
+ font-size:1rem;
 }
-
-/* last section before footer  section*/
-.closing-section{
-/* border:1px solid red; */
-position: relative;
+.chooseus-core-section .image-wrapper{
+ width:40px;
+ height:40px;
+ margin:0 auto;
 }
-.empty-box-1,.empty-box-2{
-height:100px;
+.chooseus-core-section .image-wrapper img{
+width:100%;
+height:100%;
 }
-.empty-box-1{
-background:#ddd;
+.chooseus-core-section .bitcoin-image-wrapper{
+width:100%;
 }
-.empty-box-2{
-background:coral;
+.chooseus-core-section .bitcoin-image-wrapper img{
+width:100%;
+cursor:pointer;
 }
 
-/*choice section styles || focus*/
+
+/*sub-chooseus section*/
 .chooseus-section{
 font-size:45%;
+padding:0;
 }
 .choice-menu{
 background:url("../images/btc-bg.svg") center no-repeat;
@@ -343,6 +370,7 @@ margin:5rem 0;
 /*padding:0 auto;*/
 font-size:90%;
 width:100%;
+padding:2rem;
 }
 .latest{
 width:100%;
@@ -366,11 +394,11 @@ background:#B5B5B5;
 border-radius:2px;
 }
 
-.latest-items figure,.latest-items h4,.latest-items p{
+/*.latest-items figure,.latest-items h4,.latest-items p{
 margin:0;
 padding:0;
 }
-.latest > p {
+*/.latest > p {
 font-size:0.9rem;
 color:#3E45FF;
 margin:2rem 0  0 0;
@@ -392,6 +420,52 @@ border-radius:6px;
  color:#8BFDAB;
 }
 
+
+
+
+/* media-section styles */
+.media-section{
+margin:4rem 0 0 0;
+}
+.media-empty-box{
+height:200px;
+background:#333;
+margin-bottom:2rem;
+}
+.media-invest-card{
+height:250px;
+background:#999;
+padding:10rem 0  0 0;
+}
+.media-invest-button{
+    padding:0.4rem;
+    color:#fff;
+    border-radius:5px;
+    background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    font-weight:400;
+    font-size:0.9rem;
+    display:block;
+    width:100px;
+    margin:0 auto;
+    text-align:center;
+}
+
+/* last section before footer  section*/
+.closing-section{
+/* border:1px solid red; */
+position: relative;
+}
+.empty-box-1,.empty-box-2{
+height:100px;
+}
+.empty-box-1{
+background:#ddd;
+}
+.empty-box-2{
+background:coral;
+}
+
+
 /*last section styles*/
 .last-section{
 background:#010216;
@@ -408,11 +482,11 @@ font-weight:300;
 text-transform: uppercase;
 }
 .last-section p{
-text-align:justify-all;
+text-align:left;
 }
 .last-section > p{
 text-transform:uppercase;
-font-size:0.6rem;
+font-size:0.8rem;
 font-weight:300;
 text-align:center;
 }
@@ -426,6 +500,7 @@ width:5%;
 border:1px solid #FE981C; 
 background:#FE981C;
 vertical-align:middle;
+display:none;
 }
 .index-about-section{
 display:flex;
@@ -443,6 +518,14 @@ width:100%;
 -moz-animation:rotate 5s infinite alternate;
 -o-animation:rotate 5s infinite alternate;
 animation:rotate 5s infinite alternate;
+}
+.last-section h3{
+font-weight:800;
+font-size:32px;
+}
+.index-about-section p{
+line-height:30px;
+font-size:18px;
 }
 /*keyframes for differnt browser vendors*/
 @-moz-keyframes rotate{
@@ -486,22 +569,29 @@ transform:rotate(-80deg);
  font-weight:300;
  margin:3rem 0 0 0;
  padding:1rem;
+ background: rgb(165,122,56);
+background: linear-gradient(90deg, rgba(165,122,56,1) 28%, rgba(227,208,27,1) 100%);
 }
 .trade-management-section .right .cta-btn{
- padding:0.4rem;
-   background:#BF8C09;
+ padding:0.6rem;
    background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-   color:#fff;
+   color:#010216;
    border-radius:5px;
-   font-weight:300;
-   font-size:0.8rem;
+   font-weight:800;
+   font-size:1rem;
    display:inline-block;
-   width:80px;
+   /*width:100px;*/
    text-align:center;
-   margin:1rem 0 0 0;  
+   margin:1rem 0 0 0; 
+   border:2px inset #ddd; 
+   transition:background 0.1s ease;
+}
+.trade-management-section .right .cta-btn:hover{
+background:#fff;
 }
 .trade-management-section .right{
 margin:0 0 3rem 0;
+color:#fff;
 }
 .trade-management-section .right h3{
 font-size:24px;
@@ -632,6 +722,20 @@ font-weight:600;
 .card-container{
  flex-basis:24%;
 }
+
+/*chooseus core section*/
+.chooseus-core-right{
+display:flex;
+flex-flow:row wrap;
+gap:4%;
+align-items:flex-start;
+}
+.chooseus-core-right figure{
+flex-basis:48%;
+}
+
+
+
 /*trade section*/
 
 .media-section{
@@ -713,7 +817,6 @@ padding:1rem;
  display:flex;
  flex-flow:row wrap;
  gap:4%;
- background:skyblue;
 }
 .trade-management-section > div{
 flex-basis:100%;
@@ -727,12 +830,11 @@ gap:4%;
 .trade-management-section .left > div {
 flex-basis:48%;
 }
-
-.index-about-section .image-container{
-flex-basis:30%;
+.aboutus-index-line{
+ display:inline-block;
 }
-.index-about-section > div{
-flex-basis:48%;
+.index-about-section .image-container{
+flex-basis:80%;
 }
 
 
@@ -755,6 +857,17 @@ flex-basis:48%;
 .trade-invest-bottom div{
    flex-basis:22%;
 }
+
+.chooseus-core-section{
+display:flex;
+flex-flow:row wrap;
+gap:4%;
+align-items:flex-end;
+}
+.chooseus-core-section > div{
+flex-basis:48%;
+}
+
 
 /*trade management section*/
 .trade-management-section > div {
@@ -798,6 +911,12 @@ text-align:left;
 .index-about-section{
 justify-content:center;
 align-items:flex-start;
+}
+.index-about-section .image-container{
+flex-basis:30%;
+}
+.index-about-section > div{
+flex-basis:48%;
 }
 .last-section div > h3{
 margin:0;

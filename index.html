@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./recent-font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet"/>
     <title>fundlux</title>
@@ -11,13 +12,17 @@
 <body>
     <!-- Welcome to funlux landing page developed by solomon chiakonam joboson -->
     <!-- The site header naviagtion -->
+    <div class="loading-page">
+      <span class="fa fa-spinner fa-pulse fa-3x fa-fw text-primary"></span>
+      <span class="loading-text">...Loading</span>
+    </div>
     <div class="header-wrapper">
     <header>
         <nav class="nav-link">
             <ul class="nav-list">
                 <li class="list-item"><a  href="./market.html">The Market</a></li>
                 <li class="list-item"><a  href="./signup.html">Sign Up</a></li>
-                <li class="list-item"><a  href="./aboutus.html">About Us</a></li>
+                <li class="list-item"><a  href="#aboutus">About Us</a></li>
                 <li class="list-item"><a  href="./signin.html">Login</a></li>
                 <li class="list-item"><a  href="./contactus.html">Contact us</a></li>
             </ul>
@@ -199,7 +204,78 @@
          <img src="./images/bouncing-image.svg" >
        </div>
        </section>
+
+
+
        <!-- why choose Us -->
+       <!-- choose us core section -->
+       <section class="chooseus-core-section">
+        <div class="chooseus-core-right">
+        <figure>
+          <div class="image-wrapper"><img src="https://globalbitfare.com/images/strong-security.png" alt="security-image"></div>
+            <h2>Strong Security</h2>
+            <figcaption>
+              <p>Protection against DDoS attacks <br>
+                Full data encryption.
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+          <div class="image-wrapper"><img src="https://globalbitfare.com/images/world-coverage.png" alt="security-image"></div>
+            <h2>World Coverage</h2>
+            <figcaption>
+              <p>Providing Services in 99% countries <br>
+                around the globe.
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+          <div class="image-wrapper"><img src="https://globalbitfare.com/images/payment-options.png" alt="security-image"></div>
+            <h2>Payment Options</h2>
+            <figcaption>
+              <p>Popular Methods:Bitcoin,<br>Etheruem 
+                Skrill.
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+          <div class="image-wrapper"><img src=" https://globalbitfare.com/images/mobile-app.png" alt="security-image"></div>
+            <h2>Mobile Friendly</h2>
+            <figcaption>
+              <p>Our User Dashboard is Made<br>
+              to match all Mobile resolution.
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+          <div class="image-wrapper"><img src="https://globalbitfare.com/images/cost-efficiency.png" alt="security-image"></div>
+            <h2>Mobile Friendly</h2>
+            <figcaption>
+              <p>Reasonable trading fees for traders<br>
+              and all market makers.
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+          <div class="image-wrapper"><img src="https://globalbitfare.com/images/high-liquidity.png" alt="security-image"></div>
+            <h2>High Liquidity</h2>
+            <figcaption>
+              <p>Fast access to high liquidity orderbook<br>
+              for top currency pairs.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="chooseus-core-left">
+          <div class="bitcoin-image-wrapper">
+            <img src="./images/bitcoin-image.webp" alt="bitcoin image">
+          </div>
+        </div>
+          
+       </section>
+
+
+
        <section class="chooseus-section">
          <div class="choice-menu">
            <p>Why Choose Us</p>
@@ -305,6 +381,7 @@
            </div>
          </div>
        </section>
+
        <section class="media-section">
            <div class="media-empty-box"></div>
            <div class="media-invest-card">
@@ -382,23 +459,27 @@
 
 
      <!-- Aboutus -->
-     <section class="last-section">
+     <section id="aboutus" class="last-section">
        <h3>About Us</h3>
        <p><span class="aboutus-index-line"></span>Most flexible cryptocurrency investement company<span class="aboutus-index-line"></span></p>
       <div class="index-about-section">
         <div class="image-container"><img src="./images/blockchain_white.png"></div>
         <div>
-          <h3>Global Bitfare</h3>
+          <h3>Fundlux</h3>
           <p>
-            Global Bifare Investement Company is a distinctive investment Company offering our investors access to high growth investment opportunities in Bitcoin markets and other service. We implement best practice of trading &amp; mining of Bitcoins through our operations, While offering flexibility in our investment plans. Our company benefits from an extensive network of global clients.
+            Fundlux Investement Company is a distinctive investment Company offering our investors access to high growth investment opportunities in Bitcoin markets and other service. We implement best practice of trading &amp; mining of Bitcoins through our operations, While offering flexibility in our investment plans. Our company benefits from an extensive network of global clients.
             
           </p>
         </div>
       </div>
      </section>
 
+    <!--  <section class="bitcoin-calculator">
+       
+     </section> -->
+
      <section class="google-map-section">
-      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=15300%20croydon%20Dr%20Suite%20300&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">how to add map to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=15300%20croydon%20Dr%20Suite%20300&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:250px;width:100%;}.gmap_canvas{height:100%}</style></div></div>
      </section>
     </main>
 
@@ -441,7 +522,11 @@
                 </li>
             </ul>
         </nav>
-        <small class="footer-copyright">Optimal-Finance Limited</small>
+        <small class="footer-copyright">Fundlux-Finance Limited</small>
     </footer>
+
+    <script src="./js/index.js">
+     
+    </script>
 </body>
 </html>
