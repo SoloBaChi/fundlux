@@ -467,7 +467,7 @@ text-align:center;
 text-transform:uppercase;
 color:#fff;
 padding:1rem;
-background:#021262;
+background:#010216;
 }
 .affordable-pkgs-section h3{
 text-align:center;
@@ -481,7 +481,7 @@ color:#fff;
 font-weight:600;
 }
 .affordable-pkgs-section .box{
-border:1px solid darkblue;
+border:1px solid #fefefe;
 border-radius:8px;
 background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%);
 position:relative;
