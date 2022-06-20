@@ -99,7 +99,7 @@ margin-left:0px;
 
 
 /* About media queries */
-@media(min-width:410px){
+@media(min-width:310px){
 .aboutus-log-panel{
  top:120%;
 }

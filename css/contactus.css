@@ -82,7 +82,7 @@ text-align:center;
 
 
 /*for tablet devices*/
-@media(min-width:410px){
+@media(min-width:310px){
 .reachus-panel{
 top:270%;
 }
