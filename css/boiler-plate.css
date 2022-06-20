@@ -30,7 +30,7 @@ display:block;
 width:100%;
 }
 */
-h1,h2,h3,h4,h5,p,figure,figcaption{
+h1,h2,h3,h4,h5,p,figure,figcaption,article{
 margin:0.4rem;
 padding:0;
 }
