@@ -1,0 +1,13 @@
+@import url("../../css/boiler-plate.css");
+@import url("history.css");
+/*@import url("fudiciary.css");
+@import url("ourteam.css");*/
+
+
+/*General styles*/
+
+
+
+/*Media query for all files in about-us page*/
+
+@media(min-width:310px){}

@@ -1,0 +1,13 @@
+/*History styles*/
+.history-contents{
+padding:1rem;
+}
+/*.history-contents h1,.history-section{
+padding:0 2rem;
+}*/
+
+
+@media(min-width:450px){
+
+}
+@media(min-width:810px){}

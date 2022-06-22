@@ -1,7 +1,8 @@
 /* Turn off Default styles */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600&family=Freehand&family=Indie+Flower&family=Lobster&family=Lora&family=Nova+Mono&family=Oswald:wght@200;300&family=Overlock+SC&family=Oxygen+Mono&family=Oxygen:wght@300&family=Poppins:wght@100;200;300&family=Righteous&family=Roboto:wght@100;300;400;500;900&display=swap');
 :root{
  --white-bg:#fff;  
- --green-bg:#0f0; 
+ --green-bg:#f00; 
 }
 html{
   box-sizing:border-box;  
@@ -26,14 +27,15 @@ color:#000;
 font-size:1.2rem;
 display:block;
 }
-/*img{
+
+img{
 width:100%;
 }
-*/
+
 h1,h2,h3,h4,h5,p,figure,figcaption,article{
 margin:0.4rem;
 padding:0;
 }
 h2{
-color:blue;
+color:var(--green-bg);
 }
