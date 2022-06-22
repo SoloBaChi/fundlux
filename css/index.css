@@ -9,7 +9,7 @@
 @import url("footer.css");
 /*Fundlux landing page styles */
 /*loading styles*/
-_/.loading-page{
+.loading-page{
 background:#efefea;
 height:100vh;
 width:100%;
@@ -22,7 +22,6 @@ margin:auto;
 font-size:3rem;
 font-weight:800;
 color:darkgreen;
-display:none;
 }
 .loading-text{
 position:absolute;
