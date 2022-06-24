@@ -1,0 +1,30 @@
+
+
+/*header styles*/
+.list-item.dropdown{
+ position:relative;
+ }
+.dropdown-menu{
+position:absolute;
+background:#F9F9F9;
+top:100%;
+width:100%;
+z-index:3;
+text-align:left;
+transform-origin:top center;
+transform:scale(1,0);
+transition:0.5s ease 50ms;
+}
+.dropdown-menu.extra-width{
+width:200px;
+}
+.dropdown-menu li a{
+color:brown;
+font-weight:600;
+font-size:0.8rem;
+}
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu
+{
+transform:scale(1);
+}

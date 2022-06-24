@@ -37,10 +37,11 @@ font-weight:400;
 font-size:70%;
 }
 
-.fa{
+.footer-nav .fa{
 display:block;
 font-size:1rem;
 padding:0.5rem;
+border:1px solid green;
 }
 
 .footer-copyright{
@@ -76,7 +77,7 @@ background:#FEFEFE;
 }
 .join-button{
 padding:0.4rem;
-background:#3A3FB9;
+background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%);
 border-radius:5px;
 box-shadow:none;
 border:none;

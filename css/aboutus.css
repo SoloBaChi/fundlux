@@ -1,34 +1,29 @@
 /*AboutMain styles */
-.aboutus-nav-header{
-margin-bottom:20rem;
+.about-main-section{
+ margin-top:-90px;
+  z-index:1001;
 }
 .about-breadcrumb{
 color:#fff;
+background:#001029;
 display:block;
-padding:2.5rem;
-font-weight:800;
-font-size:2rem;
+font-weight:600;
+font-size:2.5rem;
+padding:1rem 1rem 0rem 1rem;
+opacity:0.9;
+z-index:998;
+margin-bottom:1rem;
 }
 
 .aboutus-log-panel{
-background-color:transparent;
-width:95%;
+width:80%;
 border-radius:5px;
 margin:0 auto;
-padding:0;
-position:absolute;
 color:#000;
-top:154%;
-left:50%;
-transform:translate(-50%,-50%);
-}
-
-.aboutus-line-div{
-height:500px;
 }
 
 .aboutus.service-lists-cards{
-margin:0;
+padding:1rem;
 }
 .aboutus-log-panel .card-container{
 background:#F9F9F9;
@@ -66,7 +61,8 @@ font-size:1.2rem;
 }
 .team-section-box{
 height:150px;
-background:#F5F5F5;
+background:#ccc;
+margin-bottom:1rem;
 }
 .certificate-section{
 padding:2rem 3rem;
@@ -75,7 +71,7 @@ color:#848484;
 
 .certificate-box-1{
 height:250px;
-background:#F9F9F9;
+background:#ccc;
 }
 .mission-row figure,.vision-row figure{
 margin:0;
@@ -95,17 +91,8 @@ margin-left:0px;
 
 
 
-
-
-
-/* About media queries */
-@media(min-width:310px){
-.aboutus-log-panel{
- top:120%;
-}
-.aboutus-line-div{
-height:160px;
-}
+/* About us media queries */
+@media(min-width:380px){
 .team-section-row{
 display:flex;
 flex-flow:row wrap;
@@ -143,12 +130,7 @@ margin:0;
 
 
 @media(min-width:810px){
-.aboutus-log-panel{
- top:114%;
-}
-.aboutus-line-div{
-height:80px;
-}
+
 .team-section-box{
  flex-basis:22%;
  height:200px;
