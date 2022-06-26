@@ -8,6 +8,8 @@
  --md-font:1rem;
  --lg-font:1.4rem;
  --xl-font:2.5rem;
+ --edge-gap:2rem;
+ --md-edge-gap:1.5rem;
 }
 html{
   box-sizing:border-box;  
