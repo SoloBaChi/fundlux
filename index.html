@@ -16,33 +16,58 @@
       <span class="fa fa-spinner fa-pulse fa-3x fa-fw text-primary"></span>
       <span class="loading-text">...Loading....site developed by solobachi</span>
     </div>
- -->    <div class="header-wrapper">
-    <header>
-        <nav class="nav-link">
+ --> <div class="index-header-wrapper header-wrapper">
+    <header class="header">
+        <nav class="nav-wrapper">
             <ul class="nav-list">
-                <li class="list-item"><a  href="./market.html">The Market</a></li>
+                <li class="list-item dropdown"><a href="#">Our Company <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                    <!-- drop down list -->
+                    <ul class="dropdown-menu">
+                        <li><a href="./ourcompany/ourteam.html">Our Team</a></li>
+                        <li><a href="./ourcompany/ourservices.html">Our Services</a></li>
+                        <li><a href="./ourcompany/legal.html">Legal</a></li>
+                        <li><a href="./ourcompany/ourpolicy.html">Our Policy</a></li>
+                    </ul>
+                    <!--END of dropdown -->
+                </li>
+                <li class="list-item"><a  href="./index.html">The Market</a></li>
                 <li class="list-item"><a  href="./signup.html">Sign Up</a></li>
-                <li class="list-item"><a  href="#aboutus">About Us</a></li>
+                <li class="list-item dropdown"><a  href="#">About Us
+                    <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+
+                    <!-- drop down list/ second order of navigation -->
+                    <ul class="dropdown-menu extra-width">
+                        <li><a href="./aboutus/history.html">History</a></li>
+                        <li><a href="./aboutus/wearedifferent.html">How we are different</a></li>
+                        <li><a href="./aboutus/fiduciary.html">Fiduciary</a></li>
+                        <li><a href="./aboutus/clienteducation.html">Client education and services</a></li>
+                        <li><a href="./aboutus/ourteam.html">Our team</a></li>
+                        <li><a href="./aboutus/assetsundermgt.html">Assets under management</a></li>
+                        <li><a href="./aboutus/privacypol.html">Privacy Policy</a></li>
+                    </ul>
+                    <!--END of dropdown -->
+
+                </li>
                 <li class="list-item"><a  href="./signin.html">Login</a></li>
-                <li class="list-item"><a  href="./whatweinvestin.html">What We Invest In</a></li>
                 <li class="list-item"><a  href="./contactus.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
      <section class="header-section banner-section">
-        <p>
          Optimizing <span class="caption-style"> Your </span><br>
          Finance <span class="caption-style"> For </span> <br>
          Prof<span class="caption-style">its</span>
-         <a class="get-started-button" href="#">Get Started</a>
-        </p>
+         <a href="./signup.html" class="get-started-button">Get Started</a>
     </section>
-      
-      <!-- trading view -->
-         <section class="bitcoin-logo-log" style="background-color:transparent">
+</div>
+
+
+ <main class="main-site-section">
+            <!-- trading view -->
+  <section style="border:1px solid red" class="bitcoin-logo-log" style="background-color:transparent">
       <div class="btc-marque" style="background-color:transparent;">
     <!-- TradingView Widget Starts -->
-<div class="tradingview-widget-container" style="z-index:999;">
+<div class="tradingview-widget-container" style="z-index:999;"></div>
  
   <div class="tradingview-widget-container__widget">
   </div>
@@ -80,12 +105,9 @@
   </script>
 </div>
 <!--END of Trading View Widget-->
-    </section>
+</section>
 
-
-    
-    </div>
-    <main class="main-site-section">
+<!-- other sections -->
       <section class="invest-and-trade-section top">
         <div class="stock-investment">
           <h3>Stocks and ETFs</h3>
@@ -432,7 +454,7 @@
 
        <section class="affordable-pkgs-section skew-cards">
         <h3>Affordable Packages</h3>
-       <p><span class="aboutus-index-line"></span>
+       <!-- <p><span class="aboutus-index-line"></span> -->
         choose your preferable plans for investment<span class="aboutus-index-line"></span></p>
         <div class="card-list-section">
           <div class="box">
@@ -696,7 +718,7 @@
         <small class="footer-copyright">Fundlux-Finance Limited</small>
     </footer>
 
-    <script src="./js/index.js">
+    <script src="_/js/index.js">
      
     </script>
 </body>

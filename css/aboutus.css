@@ -1,6 +1,6 @@
 /*AboutMain styles */
 .about-main-section{
- margin-top:-90px;
+ margin-top:-150px;
   z-index:1001;
 }
 .about-breadcrumb{
@@ -12,7 +12,6 @@ font-size:2.5rem;
 padding:1rem 1rem 0rem 1rem;
 opacity:0.9;
 z-index:998;
-margin-bottom:1rem;
 }
 
 .aboutus-log-panel{
@@ -23,7 +22,7 @@ color:#000;
 }
 
 .aboutus.service-lists-cards{
-padding:1rem;
+padding:0rem;
 }
 .aboutus-log-panel .card-container{
 background:#F9F9F9;
@@ -93,6 +92,9 @@ margin-left:0px;
 
 /* About us media queries */
 @media(min-width:380px){
+.about-breadcrumb{
+text-align:center;
+}
 .team-section-row{
 display:flex;
 flex-flow:row wrap;

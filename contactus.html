@@ -11,28 +11,57 @@
 <body>
     <!--site header markup -->
     <div class="header-wrapper reachus-wrapper">
-    <header class="contactus-nav-header">
-        <nav class="nav-link">
+    <header class="contactus-nav-header header">
+          <nav class="nav-wrapper">
             <ul class="nav-list">
+                <li class="list-item dropdown"><a href="#">Our Company <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                    <!-- drop down list -->
+                    <ul class="dropdown-menu">
+                        <li><a href="./ourcompany/ourteam.html">Our Team</a></li>
+                        <li><a href="./ourcompany/ourservices.html">Our Services</a></li>
+                        <li><a href="./ourcompany/legal.html">Legal</a></li>
+                        <li><a href="./ourcompany/ourpolicy.html">Our Policy</a></li>
+                    </ul>
+                    <!--END of dropdown -->
+                </li>
                 <li class="list-item"><a  href="./index.html">The Market</a></li>
                 <li class="list-item"><a  href="./signup.html">Sign Up</a></li>
-                <li class="list-item"><a  href="./aboutus.html">About Us</a></li>
+                <li class="list-item dropdown"><a  href="./aboutus.html">About Us
+                    <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+
+                    <!-- drop down list/ second order of navigation -->
+                    <ul class="dropdown-menu extra-width">
+                        <li><a href="./aboutus/history.html">History</a></li>
+                        <li><a href="./aboutus/wearedifferent.html">How we are different</a></li>
+                        <li><a href="./aboutus/fiduciary.html">Fiduciary</a></li>
+                        <li><a href="./aboutus/clienteducation.html">Client education and services</a></li>
+                        <li><a href="./aboutus/ourteam.html">Our team</a></li>
+                        <li><a href="./aboutus/assetsundermgt.html">Assets under management</a></li>
+                        <li><a href="./aboutus/privacypol.html">Privacy Policy</a></li>
+                    </ul>
+                    <!--END of dropdown -->
+
+                </li>
                 <li class="list-item"><a  href="./signin.html">Login</a></li>
                 <li class="list-item"><a  href="./contactus.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
+    </div>
+
+    <main class="reachus-main-section">
     <section>
         <p><a href="/contactus.html" class="reachus-breadcrumb">Reach Us</a></p>
     </section>
     <section class="reachus-panel">
+    <form class="form-container">
     <div class="access-row">
     <div class="access access-icons">
     <ul>
-    <li><a href="#"><span class="fa fa-map-marker" aria-hidden='true'></span></a></li>
-    <li><a href="#"><span class="fa fa-telegram" aria-hidden='true'></span></a></li>
-    <li><a href="#"><span class="fa fa-whatsapp" aria-hidden='true'></span></a></li>
-     <li><a href="#"><span class="fa fa-phone" aria-hidden='true'></span></a></li>
+    <li><a href="#"><span class="fa fa-map-marker" aria-hidden='true'></span> Map</a></li>
+    <li><a href="#"><span class="fa fa-telegram" aria-hidden='true'></span> Telegram</a></li>
+    <li><a href="#"><span class="fa fa-whatsapp" aria-hidden='true'></span> Whatsapp</a></li>
+     <li><a href="#"><span class="fa fa-phone" aria-hidden='true'></span> Phone </a></li>
     </ul> 
      </div>
      <div class="access customer-feedback">
@@ -40,23 +69,21 @@
       <input type="text" name="name" required placeholder="Name">
       <input type="email" name="email" required placeholder="E-mail">
       <textarea name="feedback" rows="5" cols="25" placeholder="how can we help you"></textarea>
-      <a href="#" class="chat-btn">Chat</a>
+      <button href="#" class="chat-btn">Chat</button>
      </div>
      <div class="access customer-feedback">
        <span class="fa fa-envelope" aria-hidden="true"></span>
        <input type="text" name="name" required placeholder="Name">
       <input type="email" name="email" required placeholder="E-mail">
       <textarea name="feedback" rows="5" cols="25" placeholder="how can we help you"></textarea>
-        <a href="#" class="chat-btn">E &#8211;mail</a>
+        <button href="#" class="chat-btn">E&#8211;mail</button>
      </div>
      </div>
+   </form>
     </section>
-    </div>
 
-    <!-- space div -->
-    <div class="reachus-line-div"></div>
-    
-    <main class="reachus-main-section">
+
+
         <section class="section-1 text-section">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolore itaque nulla, quia id laudantium rem necessitatibus possimus voluptate repellat veritatis est dolores inventore hic ratione cum provident fuga iure impedit perferendis quam tempore cumque? Reprehenderit, atque dolorum tenetur dolore enim exercitationem, quod deserunt quidem provident error officia voluptate modi.</p>
      </section>

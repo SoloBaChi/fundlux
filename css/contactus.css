@@ -3,28 +3,23 @@ background:url("../images/market-bg-pic.svg") center no-repeat;
 background-size:cover;
 }
 
+.reachus-main-section{
+margin-top:-160px;
+}
 .reachus-panel{
 background-color:#F9F9F9;
-width:95%;
+width:90%;
 border-radius:5px;
 margin:0 auto;
 padding:1rem;
-position:absolute;
-top:245%;
-left:50%;
-transform:translate(-50%,-50%);
 }
 .reachus-breadcrumb{
 color:#fff;
 display:block;
-padding:2.5rem;
 font-weight:800;
-font-size:2rem;
-height:100%;
+font-size:var(--xl-font);
 }
-.reachus-line-div{
-height:650px;
-}
+
 .access .fa{
 display:block;
 font-size:1.4rem;
@@ -32,16 +27,24 @@ padding:0.5rem;
 text-align:center;
 }
 .access-row{
-display:block;
-padding:1rem;
+text-align:center;
 }
 .access{
-text-align:center;
-margin:0 0 1rem 0;
-
+margin-bottom:2rem;
 }
-.access:first-child{
-text-align:left;
+.access-icons a{
+font-size:var(--sm-font);
+color:#000;
+}
+.access.access-icons .fa{
+display:inline-block;
+color:#000;
+}
+/*.access:first-child{
+text-align:center;
+}*/
+.customer-feedback{
+margin-bottom:1rem;
 }
 .customer-feedback input,.customer-feedback textarea{
 text-align:center;
@@ -65,16 +68,17 @@ display:block;
 color:#000;
 }
 .customer-feedback .chat-btn{
-font-size:0.8rem;
-background:#7C4B00;
-width:40%;
-font-weight:600;
+font-size:80%;
+background:#f00;
+width:70px;
+font-weight:400;
 color:#fff;
-padding:0.3rem;
-border-radius:10px;
-display:inline-block;
-margin-top:0.5rem;
+padding:0.6rem;
+border-radius:15px;
+display:block;
+margin:0.5rem auto;
 text-align:center;
+border:none;
 }
 
 
@@ -82,30 +86,16 @@ text-align:center;
 
 
 /*for tablet devices*/
-@media(min-width:310px){
-.reachus-panel{
-top:270%;
-}
-.reachus-line-div{
-height:650px;
-}
-/*.customer-feedback .chat-btn{
-width:80%;
-}*/
+@media(min-width:380px){
 
 }
 
 /*for desktop devices*/
-@media(min-width:810px){
-/*.reachus-panel{}
-*/
-.reachus-panel{
-top:170%;
-}
-.reachus-line-div{
-height:230px;
-}
+@media(min-width:650px){
 
+.reachus-breadcrumb{
+text-align:center;
+}
 .reachus-panel .access + .access{
 border-left:2px solid #ddd;
 }
@@ -116,10 +106,7 @@ flex-flow:row wrap;
 justify-content:space-between;
 }
 .access{
-flex-basis:32%;
+flex:32%;
 text-align:center;
-}
-.customer-feedback .chat-btn{
-width:50%;
 }
 }

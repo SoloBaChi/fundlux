@@ -41,11 +41,10 @@ display:none;
  background-size:cover;
  height:100vh;
 }
-.header{
-color:#fff;
-height:75%;
+.index-header-wrapper{
+margin-bottom:0.5em;
+border:2px solid yellow;
 }
-
 /*.nav-link{
 padding:1.2rem 0;
 }
@@ -61,58 +60,49 @@ font-size:1.3;
 font-weight:600;
 padding:2rem;
 }*/
-.banner-section{
-padding:2rem 4rem;
-font-size:3rem;
-font-weight:800;
-background: linear-gradient(116.87deg, #9F8C45 8.03%, #FFFFFF 37.42%, #EA8FD6 66.81%);
--webkit-background-clip: text;
-/*-webkit-text-fill-color: transparent;*/
+.header-section.banner-section{
+background:linear-gradient(116.87deg, #9F8C45 8.03%, #FFFFFF 37.42%, #EA8FD6 66.81%);
 background-clip: text;
-/*text-fill-color: transparent;
-*/}
+color:#fff;
+font-size:var(--xl-font);
+font-weight:800;
+padding:0.4rem;
+margin-top:-1rem;
+text-fill-color: transparent;
+-webkit-text-fill-color:transparent;
+-webkit-background-clip: text;
+}
+.main-site-section{
+border:2px solid green;
+margin-top:-35px;
+}
 .bitcoin-logo-log{
-height:80px;
 background-color:teal;
-width:95%;
+width:90%;
 border-radius:5px;
 margin:0 auto;
 padding:2rem;
-position:absolute;
-top:100%;
-left:50%;
-transform:translate(-50%,-50%);
 }
 
 
-
-/* main section tyles */
-/*.main-site-section{
- padding:2rem 0rem 0rem 0rem;
- font-size:1.8rem;
- font-weight:700;
-}*/
-/*section{
-padding:2rem;
-}*/
-
 .get-started-button{
-    padding:0.4rem;
-    background:#BF8C09;
+    padding:0.6rem;
     background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%);
     color:#fff;
+    -webkit-text-fill-color:#fff;
     border-radius:5px;
     font-weight:400;
-    font-size:0.9rem;
+    font-size:40%;
     display:block;
     text-align:center;
-    width:100px;
+    width:130px;
     margin:1rem 0 8rem 0;
+    z-index:1004;
     }
    
 /*Investement section styles*/
   .invest-and-trade-section{
-   /*border:1px solid red;*/
+  /*border:1px solid red;*/
    font-size:1rem;
    font-weight:300;
   }
@@ -173,7 +163,7 @@ padding:2rem;
     .service-lists-cards{
     font-size:1rem;
     font-weight:normal;
-    margin:2rem 0;
+    margin:0;
     }
    .invest-button{
     padding:0.4rem;
@@ -743,7 +733,7 @@ gap:4%;
 .nav-list a{
 color:#fff;
 font-size:0.9rem;
-font-weight:600;
+font-weight:500;
 display:block;
 padding:0.6rem;
 }
@@ -919,10 +909,10 @@ flex-basis:80%;
 
 /*for desktop devices*/
 @media(min-width:650px){
-/*.nav-list{
- justify-content:flex-end;
- gap:2rem;
-}*/
+.header-section.banner-section{
+margin-top:0;
+padding:2rem;
+}
 /*affordable-pkgs-section*/
 .affordable-pkgs-section .box{
 flex-basis:22%;

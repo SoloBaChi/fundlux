@@ -5,28 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
-    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="./css/index.css" rel="stylesheet"/>
-    </head>
+</head>
 <body>
     <div class="header-wrapper">
-        <header class="signup-nav-header">
-            <nav class="nav-link">
-                <ul class="nav-list">
-                    <li class="list-item"><a  href="./index.html">The Market</a></li>
-                    <li class="list-item"><a  href=".">Sign Up</a></li>
-                    <li class="list-item"><a  href="./aboutus.html">About Us</a></li>
-                    <li class="list-item"><a  href="./signin.html">Login</a></li>
-                    <li class="list-item"><a  href="./contactus.html">Contact us</a></li>
-                </ul>
-            </nav>
+        <header class="signin-nav-header header">
+          <nav class="nav-wrapper">
+            <ul class="nav-list">
+                <li class="list-item dropdown"><a href="#">Our Company <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                    <!-- drop down list -->
+                    <ul class="dropdown-menu">
+                        <li><a href="./ourcompany/ourteam.html">Our Team</a></li>
+                        <li><a href="./ourcompany/ourservices.html">Our Services</a></li>
+                        <li><a href="./ourcompany/legal.html">Legal</a></li>
+                        <li><a href="./ourcompany/ourpolicy.html">Our Policy</a></li>
+                    </ul>
+                    <!--END of dropdown -->
+                </li>
+                <li class="list-item"><a  href="./index.html">The Market</a></li>
+                <li class="list-item"><a  href="./signup.html">Sign Up</a></li>
+                <li class="list-item dropdown"><a  href="./aboutus.html">About Us
+                    <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+
+                    <!-- drop down list/ second order of navigation -->
+                    <ul class="dropdown-menu extra-width">
+                        <li><a href="./aboutus/history.html">History</a></li>
+                        <li><a href="./aboutus/wearedifferent.html">How we are different</a></li>
+                        <li><a href="./aboutus/fiduciary.html">Fiduciary</a></li>
+                        <li><a href="./aboutus/clienteducation.html">Client education and services</a></li>
+                        <li><a href="./aboutus/ourteam.html">Our team</a></li>
+                        <li><a href="./aboutus/assetsundermgt.html">Assets under management</a></li>
+                        <li><a href="./aboutus/privacypol.html">Privacy Policy</a></li>
+                    </ul>
+                    <!--END of dropdown -->
+
+                </li>
+                <li class="list-item"><a  href="./signin.html">Login</a></li>
+                <li class="list-item"><a  href="./contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
         </header>
-        <section class="before-panel">
+        
+        </div>
+
+        <main class="signup-main-section">
+
+        <section>
             <p><a href="./signup.html" class="signup-breadcrumb">Sign Up</a></p>
         </section>
-         <!-- space div -->
-        <div class="signup-breadcrumb-line-div"></div>
-
         <section class="signup-panel">
          <div class="signup-panel-button">
              <a class="signup-button sign-up" href="./signin.html">Sign In</a>
@@ -34,52 +61,59 @@
          </div>
          <form class="form-field">
              <div class="signup-form-body">
-                <label for="name">Name
+                <div class="field-container">
+                <label for="name"> Name
                 <input type="text" 
                 class="name-input input"
                 id="name"
                 >
                 </label>
-                <label for="phone_number">Phone Number
+               </div>
+                <div class="field-container">
+                <label for="phone_number"> Phone Number
                 <input type="number" 
                 class="number-input input"
                 id="number"
                 >
                 </label>
-                <label for="email">E-Mail
+                </div>
+                <div class="field-container">
+                <label for="email"> E-Mail
                 <input type="email" 
                 class="email-input input"
                 id="email"
                 >
                 </label>
+                </div>
+                <div class="field-container">
                 <label for="country">Country
                 <input type="text" 
                 class="country-input input"
                 id="country"
                 >
                 </label>
+               </div>
              </div>
              <div class="signup-referral-section">
              <p>Referral Code</p>
              <div class="code-section">
-                 <span></span>
-                 <span></span>
-                 <span></span>
-                 <span></span>
-                 <span></span>
-                 <span></span>
+                 <input type="text">
+                 <input type="text">
+                 <input type="text">
+                 <input type="text">
+                 <input type="text">
+                 <input type="text">
              </div>
              </div>
              <div class="signup-form-footer">
              <a href="./signin.html">Sign In</a>
-             <a href="#" class="signup-footer-button">Sign Up</a>
+             <button href="#" class="signup-footer-cta">Sign Up</button>
              </div>
              <!-- <a class="create-text-action" href="#"> Create An Account </a> -->
          </form>
         </section>
-        </div>
-         <!-- space div element -->
-         <div class="signup-line-div"></div>
+        </main>
+        
 
         <!-- site footer -->
         <footer>
