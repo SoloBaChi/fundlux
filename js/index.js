@@ -2,7 +2,7 @@
       window.addEventListener('load',()=>{
       setTimeout(()=>{
       documentLoader.classList.add("stop-loading");
-      },3000)
+      },1000)
       });
 
 const scrollTop = document.getElementById("main-menu");
