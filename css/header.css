@@ -1,4 +1,150 @@
 /*header styles*/
+
+/*Toggle bar styles*/
+#toggle-menu,#close-menu{
+color:#fff;
+display:inline-block;
+font-size:1.8rem;
+padding:1px 10px;
+}
+#toggle-menu{
+line-height:1.5;
+border:1px solid #eee;
+border-radius:6px;
+background:#010216;
+transition:0.5s;
+position:absolute;
+top:10px;
+right:20px;
+}
+#toggle-menu:hover{
+color:#f00;
+padding:2px 12px;
+}
+.sr-only{
+ display:none;
+ position:absolute;
+ top:0;
+ left:0;
+ width:0px;
+ height:0px;
+ margin:-1px;
+ overflow:hidden;
+ clip:rect(0,0,0,0);
+}
+.nav-list a{
+color:#fff;
+font-size:var(--md-font);
+font-weight:500;
+display:block;
+padding:0.6rem;
+transition:0.2s ease-out;
+}
+.nav-list ul a{
+padding-left:2rem;
+font-weight:300;
+font-size:var(--sm-font);
+}
+
+.main-menu{
+position:absolute;
+left:0;
+top:0;
+background:#010216;
+width:100vw;
+height:100vh;
+transform-origin:top center;
+transform:scale(1,0);
+transition:0.5s ease 50ms;
+}
+#main-menu:target{
+transform:scale(1);
+left:0;
+}
+#main-menu:target #close-menu{
+position:absolute;
+top:0;
+right:15px;
+display:block;
+color:#f00;
+}
+
+
+
+
+
+/*dropdown menu styles for mobile view*/
+.list-item.dropdown{
+ position:relative;
+ }
+.dropdown-menu{
+position:absolute;
+background:#010216;
+top:100%;
+width:100%;
+z-index:3;
+text-align:left;
+transform-origin:top center;
+transform:scale(1,0);
+transition:0.5s ease 50ms;
+}
+.dropdown:hover .dropdown-menu,.dropdown:focus-within .dropdown-menu{
+transform:scale(1);
+}
+
+
+
+
+
+
+@media(min-width:650px){
+/*turn off all the mobile styles*/
+#toggle-menu,#close-menu{
+display:none;
+}
+#toggle-menu{
+line-height:0;
+border:none;
+border-radius:0px;
+position:static;
+top:auto;
+right:auto;
+}
+
+.main-menu{
+transform:scale(1);
+background:#010216;
+width:100%;
+height:auto;
+display:flex;
+justify-content:flex-start;
+flex-flow:row wrap;
+transform-origin:initial;
+padding:4px 10px;
+transform:translateY(-10%);
+transition:all 0.8s ease 40ms;
+}
+.main-menu li:nth-of-type(4){
+margin-right:auto;
+}
+.main-menu li:nth-of-type(2){
+margin-left:auto;
+}
+.main-menu-scrollTop{
+position:fixed;
+top:0;
+left:0;
+height:70px;
+justify-content:space-around;
+z-index:2000;
+transform:translateY(0);
+}
+.nav-list a:hover{
+border-bottom:3px solid #fff;
+transition:0.2s ease-out;
+}
+
+
 .list-item.dropdown{
  position:relative;
  }
@@ -27,4 +173,13 @@ font-size:0.8rem;
 .dropdown:focus-within .dropdown-menu
 {
 transform:scale(1);
+}
+
+}
+
+
+@media(min-width:810px){
+.main-menu{
+gap:4%;
+}
 }

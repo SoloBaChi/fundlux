@@ -12,11 +12,19 @@
     <!--site header markup -->
     <div class="header-wrapper reachus-wrapper">
     <header class="contactus-nav-header header">
-          <nav class="nav-wrapper">
-            <ul class="nav-list">
+          <a href="#main-menu" id="toggle-menu" class="toggle-menu">
+        <span class="sr-only">Open Main Menu</span>
+        <span class="fa fa-bars" aria-hidden="true"></span>
+      </a>
+        <nav class="nav-wrapper">
+            <ul class="nav-list main-menu" id="main-menu">
+                <a href="#toggle-menu" class="close-menu" id="close-menu">
+                  <span class="sr-only">Close Main Menu</span>
+                  <span class="fa fa-times" aria-hidde="true"></span>
+                </a>
                 <li class="list-item dropdown"><a href="#">Our Company <span class="fa fa-caret-down" aria-hidden="true"></span></a>
                     <!-- drop down list -->
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" id="dropdown-menu-1">
                         <li><a href="./ourcompany/ourteam.html">Our Team</a></li>
                         <li><a href="./ourcompany/ourservices.html">Our Services</a></li>
                         <li><a href="./ourcompany/legal.html">Legal</a></li>
@@ -26,11 +34,11 @@
                 </li>
                 <li class="list-item"><a  href="./index.html">The Market</a></li>
                 <li class="list-item"><a  href="./signup.html">Sign Up</a></li>
-                <li class="list-item dropdown"><a  href="./aboutus.html">About Us
+                <li class="list-item dropdown"><a  href="#">About Us
                     <span class="fa fa-caret-down" aria-hidden="true"></span></a>
 
                     <!-- drop down list/ second order of navigation -->
-                    <ul class="dropdown-menu extra-width">
+                    <ul class="dropdown-menu extra-width" id="dropdown-menu-2">
                         <li><a href="./aboutus/history.html">History</a></li>
                         <li><a href="./aboutus/wearedifferent.html">How we are different</a></li>
                         <li><a href="./aboutus/fiduciary.html">Fiduciary</a></li>
@@ -46,6 +54,7 @@
                 <li class="list-item"><a  href="./contactus.html">Contact us</a></li>
             </ul>
         </nav>
+        <a href="#toggle-menu" tabindex="-1" class="backdrop" aria-hidden></a>
     </header>
     </div>
 

@@ -4,3 +4,14 @@
       documentLoader.classList.add("stop-loading");
       },3000)
       });
+
+const scrollTop = document.getElementById("main-menu");
+window.addEventListener("scroll",()=>{
+ if(scrollY > 307){
+ 	scrollTop.classList.add("main-menu-scrollTop");
+ }
+ else{
+ scrollTop.classList.remove("main-menu-scrollTop");
+ }
+})
+   
