@@ -1,4 +1,21 @@
 /*header styles*/
+.header-wrapper{
+ background:#010216 url("../images/financial250 1.svg") no-repeat center;
+ background-size:cover;
+ height:100vh;
+}
+.index-header-wrapper{
+margin-bottom:0.5em;
+}
+/*reserved header style*/
+/*.header{
+border:2px solid #fff;
+}*/
+.nav-wrapper{
+position:relative;
+padding:1.5rem;
+}
+
 
 /*Toggle bar styles*/
 #toggle-menu,#close-menu{
@@ -22,15 +39,15 @@ color:#f00;
 padding:2px 12px;
 }
 .sr-only{
- display:none;
- position:absolute;
- top:0;
- left:0;
- width:0px;
- height:0px;
- margin:-1px;
- overflow:hidden;
- clip:rect(0,0,0,0);
+  display:none;
+  position:absolute;
+  width:1px;
+  height:1px;
+  margin:-1px;
+  padding:0;
+  border:none;
+  clip:rect(0,0,0,0);
+  overflow:hidden;
 }
 .nav-list a{
 color:#fff;
@@ -52,7 +69,7 @@ position:absolute;
 left:0;
 top:0;
 background:#010216;
-width:100vw;
+width:100%;
 height:100vh;
 transform-origin:top center;
 transform:scale(1,0);
@@ -115,14 +132,14 @@ right:auto;
 .main-menu{
 transform:scale(1);
 background:#010216;
-width:100%;
-height:auto;
+/*width:100%;*/
+height:50px;
 display:flex;
 justify-content:flex-start;
 flex-flow:row wrap;
 transform-origin:initial;
 padding:4px 10px;
-transform:translateY(-10%);
+transform:translateY(-5%);
 transition:all 0.8s ease 40ms;
 z-index:2002;
 }

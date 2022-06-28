@@ -16,8 +16,7 @@
  --sm-head-font:1.2rem;
  --xs-head-font:0.8rem;
 }
-h
-tml{
+html{
   box-sizing:border-box;  
 }
 *,*::before,*::after{
