@@ -12,7 +12,7 @@ margin-bottom:0.5em;
 border:2px solid #fff;
 }*/
 .nav-wrapper{
-position:relative;
+/*position:relative;*/
 padding:1.5rem;
 }
 
@@ -23,6 +23,11 @@ color:#fff;
 display:inline-block;
 font-size:1.8rem;
 padding:1px 10px;
+}
+#close-menu{
+font-weight:100;
+font-size:var(--sm-font);
+color:#fff;
 }
 #toggle-menu{
 line-height:1.5;
@@ -84,7 +89,7 @@ position:absolute;
 top:0;
 right:15px;
 display:block;
-color:#f00;
+color:#fff;
 }
 
 
@@ -119,15 +124,17 @@ transform:scale(1);
 /*turn off all the mobile styles*/
 #toggle-menu,#close-menu{
 display:none;
-}
-#toggle-menu{
 line-height:0;
 border:none;
 border-radius:0px;
 position:static;
 top:auto;
 right:auto;
+visibility:hidden;
 }
+/*#toggle-menu{
+
+}*/
 
 .main-menu{
 transform:scale(1);
