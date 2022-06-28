@@ -1,13 +1,39 @@
 @import url("../../css/boiler-plate.css");
-@import url("history.css");
-/*@import url("fudiciary.css");
-@import url("ourteam.css");*/
+@import url("../../css/header.css");
+@import url("../../css/footer.css");
+@import url("assets_under_management.css");
 
 
-/*General styles*/
+
+/*General styles -- the style below is applied to all the linkk nested inside aboutus section*/
+/*
+h1 --xl-head-font;
+h2--lg-head-font;
+h3--md-head-font;
+h4 --sm-head-font;
+h5---xs-head-font;
+*/
+.aboutus-page{
+padding:2rem;
+}
+.aboutus-page h1{
+text-transform:uppercase;
+font-weight:600;
+font-size:var(--xl-head-font);
+}
+.aboutus-page h1:after{
+content:":";
+font-weight:600;
+font-size:var(--xl-font);
+}
+
+
+
+
+
+
 
 
 
 /*Media query for all files in about-us page*/
-
 @media(min-width:310px){}

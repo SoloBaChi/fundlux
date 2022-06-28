@@ -1,5 +1,5 @@
 .whatweinvsetin-wrapper{
-background:url("../images/market-bg-pic.svg") no-repeat right;
+background:url("../images/market-bg-pic.svg") no-repeat center;
 background-size:cover;
 }
 
@@ -13,7 +13,12 @@ line-height:1.5;
 .whatweinvestin-contents section{
 padding:0;
 }
-.fundlux-caption{
+.text-contents{
+font-weight:400;
+font-size:var(--md-font);
+line-height:1.5;
+}
+span.fundlux-caption{
 font-weight:800;
 font-size:24px;
 color:#010216;
@@ -35,7 +40,7 @@ background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394
 color:#fff;
 width:100px;
 display:inline-block;
-font-size:70%;
+font-size:65%;
 text-align:center;
 font-weight:400;
 padding:0.6rem;
@@ -53,7 +58,7 @@ flex-flow:row wrap;
 gap:4%;
 }
 .whatweinvestin-cards .box{
-flex-basis:48%;
+flex:1 1 48%;
 }
 }
 

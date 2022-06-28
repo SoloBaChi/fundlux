@@ -10,8 +10,14 @@
  --xl-font:2.5rem;
  --edge-gap:2rem;
  --md-edge-gap:1.5rem;
+ --xl-head-font:2.4rem;
+ --lg-head-font:2rem; 
+ --md-head-font:1.6rem;
+ --sm-head-font:1.2rem;
+ --xs-head-font:0.8rem;
 }
-html{
+h
+tml{
   box-sizing:border-box;  
 }
 *,*::before,*::after{

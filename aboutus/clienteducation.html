@@ -5,7 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>client education and service</title>
-	<link rel="stylesheet" href="./css/index.css">
+	<link href="../recent-font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/aboutus-page.css">
 
 	<!-- font-awesome link goes here -->
 </head>
@@ -14,7 +15,7 @@
 <header>
 	<!-- main navigation links -->
 </header>
-<main class="clientedu-contents">
+<main class="clientedu-contents aboutus-page">
 	<!-- contents of the page -->
 	<section>
 		<div class="paragraph">
@@ -60,9 +61,51 @@
 	</section>
 
 </main>
-<footer>
+
 	<!-- end of the page -->
-</footer>
+	<footer>
+        <nav class="footer-nav">
+            <ul class="footer-nav-item">
+                <li class="footer-nav-list"><a href="#">Contact Us</a>
+                    <!-- second navigation layer -->
+                  <ul>
+                    <li><a href="#"><span class="fa fa-map-marker" aria-hidden='true'></span>locate us</a></li>
+                    <li><a href="#"><span class="fa fa-telegram" aria-hidden='true'> </span> visit our Telegram page</a></li>
+                    <li><a href="tel:+234 9017912839"><span class="fa fa-whatsapp" aria-hidden='true'></span> +234 901-791-2839</a></li>
+                    <li><a href="tel:+234 9017912839"><span class="fa fa-phone" aria-hidden='true'></span>+234 901-791-2839</a></li>
+                    </ul> 
+                </li>
+                <li class="footer-nav-list"><a href="#">Explore</a>
+                      <!-- second navigation layer -->
+                      <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="./market.html">The Market</a></li>
+                        <li><a href="./signup.html">Sign Up</a></li>
+                        <li><a href="./contactus.html">Contact Us</a></li>
+                        <li><a href="./signin.html">Login</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="footet-nav-list"><a href="#">FAQ</a></li> -->
+                <li class="footer-nav-list">Newsletter
+                    <div class="news-letter-box">
+                    <form>
+                        <label class="newsletter-label" for="newsletter">Join Our News Letter</label>
+                        <input class="newsletter-input" type="text" id="newsletter"
+                         name="newsletter" 
+                         placeholder="Enter E-mail Address"/>
+                        <button class="join-button" type="submit"><a href="#">Join</a></button>
+                    </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <small class="footer-copyright">Fundlux-Finance Limited</small>
+    </footer>
+
+    <!-- embeded script -->
+    <script src="./js/index.js"></script>
 </div>
 </body>
 </html>

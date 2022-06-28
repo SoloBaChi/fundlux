@@ -5,7 +5,7 @@
 @import url("aboutus.css");
 @import url("signin.css");
 @import url("contactus.css");
-@import url("whatweinvest.css");
+@import url("whatweinvestin.css");
 @import url("footer.css");
 /*Fundlux landing page styles */
 /*loading styles*/
@@ -19,9 +19,9 @@ display:flex;
 }
 .loading-page .fa{
 margin:auto;
-font-size:3rem;
+font-size:4rem;
 font-weight:800;
-color:darkgreen;
+color:#8C6005;
 }
 /*.loading-text{
 position:absolute;
@@ -94,7 +94,7 @@ padding:0.2rem;
    font-weight:300;
    margin-top:50px;
    padding:2rem;
-   color:blue;
+   color:#000;
   }
   .stock-investment{
   border:1px solid #ddd;
@@ -107,8 +107,9 @@ padding:0.2rem;
   box-shadow:1px 0px 2px rgba(0,0,0,0.5);
 }
   .stock-investment h3{
-   font-size:var(--md-font);
+   font-size:1.2rem;
    font-weight:600;
+   color:#8C6005;
  }
  .stock-investment p{
   margin:0;
@@ -144,15 +145,19 @@ margin:2rem auto;
    font-size:var(--md-font);
    font-weight:500;
    padding:var(--edge-gap);
-   color:green;
+   color:#8C6005;
+    }
+    .trade-invest-bottom .bold-text{
+    font-weight:600;
+    font-size:var(--lg-font);
     }
   .trade-invest-bottom div{
    margin:0 0 2rem 0;
   }
   .trade-invest-bottom .cta-btn{
-   padding:0.4rem;
+   padding:0.6rem;
    background:#BF8C09;
-   background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%)  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+   background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%);
    color:#fff;
    border-radius:5px;
    display:inline-block;
@@ -162,8 +167,8 @@ margin:2rem auto;
   }
   .trade-invest-bottom .cta-btn a{
     color:#fff;
-    font-weight:300;
-   font-size:90%;
+    font-weight:600;
+   font-size:95%;
   }
 
 
@@ -180,7 +185,7 @@ margin:2rem auto;
    .invest-button{
     padding:0.4rem;
     background: #BF8C09;
-    background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     color:#fff;
     border-radius:5px;
     font-weight:400;
@@ -530,6 +535,7 @@ padding:0.4rem;
 .affordable-pkgs-section .box .minmax-section{
 display:flex;
 justify-content:space-between;
+padding-top:0.6rem;
 }
 .affordable-pkgs-section .box .minmax-section h5{
 font-size:0.6rem;
@@ -599,10 +605,10 @@ margin-bottom:1rem;
 .trade-management-section .left > div .box{
  transition:0.5s;
  border-radius:10px;
- box-shadow:1px 0px 2px rgba(0,0,0,0.5),-1px 0px 2px rgba(0,0,0,0.5);
+ box-shadow:1px 0px 2px #fefefe,-1px 0px 2px #fefefe;
  position:relative;
  height:100%;
- color:#000;
+ color:#999;
  z-index:998;
  margin-bottom:1rem;
 }
