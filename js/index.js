@@ -23,7 +23,7 @@ const showBioText = document.querySelectorAll(".bio-text");
 for(let member=0;member < displayTeamBio.length; member++){
  displayTeamBio[member].addEventListener("click",function(e){
   //console.log(e.target.id);
-   showBioText.forEach(text =>{
+   showBioText.forEach(text => {
    	if(e.target.id === text.id){
    	 //console.log(text);
    	 text.classList.toggle("bio-text-clicked");
