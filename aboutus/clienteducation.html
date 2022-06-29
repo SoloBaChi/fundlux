@@ -12,9 +12,72 @@
 </head>
 <body>
 <div class="site-wrapper">
-<header>
+<header class="aboutus header">
 	<!-- main navigation links -->
+    <a href="#main-menu" id="toggle-menu" class="toggle-menu">
+        <span class="sr-only">Open Main Menu</span>
+        <span class="fa fa-bars" aria-hidden="true"></span>
+      </a>
+        <nav class="nav-wrapper">
+            <ul class="nav-list main-menu" id="main-menu">
+                <a href="#toggle-menu" class="close-menu" id="close-menu">
+                  <span class="sr-only">Close Main Menu</span>
+                  <span class="fa fa-times" aria-hidde="true"></span>
+                </a>
+                <li><a href="./index.html">Home</a></li>
+                <li class="list-item dropdown"><a href="#">Our Company <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                    <!-- drop down list -->
+                    <ul class="dropdown-menu" id="dropdown-menu-1">
+                        <li><a href="./ourcompany/ourteam.html">Our Team</a></li>
+                        <li><a href="./ourcompany/ourservices.html">Our Services</a></li>
+                        <li><a href="./ourcompany/legal.html">Legal</a></li>
+                        <li><a href="./ourcompany/ourpolicy.html">Our Policy</a></li>
+                    </ul>
+                    <!--END of dropdown -->
+                </li>
+                <li class="list-item"><a  href="./index.html">The Market</a></li>
+                <li class="list-item"><a  href="./whatweinvestin.html">What We Invest In</a></li>
+                <li class="list-item"><a  href="./signup.html">Sign Up</a></li>
+                <li class="list-item dropdown"><a  href="#">About Us
+                    <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+
+                    <!-- drop down list/ second order of navigation -->
+                    <ul class="dropdown-menu extra-width" id="dropdown-menu-2">
+                        <li><a href="./aboutus/history.html">History</a></li>
+                        <li><a href="./aboutus/wearedifferent.html">How we are different</a></li>
+                        <li><a href="./aboutus/fiduciary.html">Fiduciary</a></li>
+                        <li><a href="./aboutus/clienteducation.html">Client education and services</a></li>
+                        <li><a href="./aboutus/ourteam.html">Our team</a></li>
+                        <li><a href="./aboutus/assetsundermgt.html">Assets under management</a></li>
+                        <li><a href="./aboutus/privacypol.html">Privacy Policy</a></li>
+                    </ul>
+                    <!--END of dropdown -->
+
+                </li>
+                <li class="list-item"><a  href="./signin.html">Login</a></li>
+                <li class="list-item"><a  href="./contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
 </header>
+
+<!-- banner section with an image overlay -->
+   <section class="banner-section">
+        <div class="img-container">
+            <img src="../images/clienteducation-banner-img.jpg" alt="banner image">
+        </div>
+        <div class="banner-overlay">
+
+        </div>
+        <div class="bread-crumb">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Go to home</a></li>
+                    <li><a href="#">Client Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
 <main class="clientedu-contents aboutus-page">
 	<!-- contents of the page -->
 	<section>
@@ -41,16 +104,16 @@
 			</p>
 		</div>
 		<div class="paragraph">
-			<h1>high touch client services</h1>
+			<h2>high touch client services</h2>
 			<p>
 			   At Fundlux Financial Management, portfolio management is only half the picture. Of equal, if not more, importance is our personalized service. We commit ourselves to understanding your financial needs and giving you the confidence and comfort necessary to help you reach your long-term investing goals.
 			</p>
 			<p>
-				<strong>Education and Information</strong> We want our clients to understand what’s going on with their portfolios and, more importantly, the reasoning behind our decisions. That’s why we have multiple ways we regularly keep you up-to-date and informed on the markets, our outlook and what drives our strategic portfolio decisions.
+				<strong class="aboutus-text-caption">Education and Information</strong> We want our clients to understand what’s going on with their portfolios and, more importantly, the reasoning behind our decisions. That’s why we have multiple ways we regularly keep you up-to-date and informed on the markets, our outlook and what drives our strategic portfolio decisions.
 			</p>
 		</div>
 		<div class="paragraph">
-			<h1>client programs</h1>
+			<h2>client programs</h2>
 			<p>
 				We continually seeks new ways to enrich your client experience. In addition to helping you achieve your long-term financial goals via portfolio management, we host a series of programs to provide you with timely updates and education regarding the financial markets and your portfolio. We designed these events, held in more than 60 cities nationwide, exclusively for clients of Fundlux Financial Management to offer unprecedented access to senior decision makers and other clients of the firm. Examples include Fundlux Financial Management Forecast Seminars, Investment Roundtables, Fundlux Financial Management Friends events, and more. There is no additional cost to our clients for these events, and we encourage you to attend as many as you would like each year.
 			</p>
@@ -105,7 +168,7 @@
     </footer>
 
     <!-- embeded script -->
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
 </div>
 </body>
 </html>

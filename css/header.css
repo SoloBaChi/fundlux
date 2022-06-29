@@ -3,6 +3,7 @@
  background:#010216 url("../images/financial250 1.svg") no-repeat center;
  background-size:cover;
  height:100vh;
+ z-index:2005;
 }
 .index-header-wrapper{
 margin-bottom:0.5em;
@@ -79,6 +80,7 @@ height:100vh;
 transform-origin:top center;
 transform:scale(1,0);
 transition:0.5s ease 50ms;
+z-index:1010;
 }
 #main-menu:target{
 transform:scale(1);
