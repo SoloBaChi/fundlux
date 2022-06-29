@@ -3,6 +3,8 @@
 @import url("../../css/footer.css");
 @import url("assets_under_management.css");
 @import url("fiduciary.css");
+@import url("wearedifferent.css");
+@import url("ourteam.css");
 
 
 
@@ -66,10 +68,12 @@ color:#d29007;
 font-size:1.4rem;
 }
 h1,h2,h3,h4,h5{
-margin-top:1rem;
+/*margin-top:1rem;*/
 color:#d29007;
 }
-
+.aboutus-page img{
+width:100%;
+}
 /*aboutus caption text*/
 .aboutus-text-caption{
 color:#785205;
@@ -124,7 +128,7 @@ border-left:2px solid #fff;
  font-weight:300;
  font-size:var(--md-font);
  margin-left:1rem;
- padding:0.8rem;
+ padding:0.4rem;
 }
 .banner-section .bread-crumb a:hover{
 text-decoration:underline;
@@ -134,11 +138,34 @@ text-decoration:underline;
 
 
 
-
-
-
-
-
-
 /*Media query for all files in about-us page*/
-@media(min-width:310px){}
+/*mobile device*/
+@media(min-width:380px){
+}
+
+/*Desktop devices*/
+@media(min-width:650px){
+.flex{
+display:flex;
+justify-content:space-around;
+align-items:flex-start;
+gap:2%;
+}
+.flex > *{
+flex:1 1 48%;
+}
+/*.flex img{
+border:2px solid blue;
+}*/
+.flex .img-container.small-container{
+height:40px;
+flex:0 0 4%;
+padding:0.2rem;
+background:#ccc;
+border-radius:6px;
+}
+.flex .img-container.small-container img{
+width:100%;
+height:100%;
+}
+}

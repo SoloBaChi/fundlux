@@ -15,3 +15,23 @@ window.addEventListener("scroll",()=>{
  }
 })
    
+
+/*Team members js*/
+const displayTeamBio = document.querySelectorAll(".read-bio-cta");
+const showBioText = document.querySelectorAll(".bio-text");
+
+for(let member=0;member < displayTeamBio.length; member++){
+ displayTeamBio[member].addEventListener("click",function(e){
+  //console.log(e.target.id);
+   showBioText.forEach(text =>{
+   	if(e.target.id === text.id){
+   	 //console.log(text);
+   	 text.classList.toggle("bio-text-clicked");
+   	}
+   	else{
+   	text.classList.remove("bio-text-clicked");
+   	}
+   })
+ })
+}
+
