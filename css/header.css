@@ -60,7 +60,7 @@ color:#fff;
 font-size:var(--sm-font);
 font-weight:800;
 display:block;
-padding:0.2rem;
+padding-bottom:0.2rem;
 margin:0;
 transition:0.2s ease-out;
 }
@@ -180,7 +180,9 @@ transition:0.2s ease-out;
 .nav-list a{
 font-weight:500;
 }
-
+/*.nav-list ul a{
+padding-left:0.6rem;
+}*/
 
 .list-item.dropdown{
  position:relative;
@@ -203,8 +205,10 @@ width:200px;
 }
 .dropdown-menu li a{
 color:#010216;
-font-weight:600;
-font-size:0.8rem;
+font-weight:400;
+font-size:var(--sm-font);
+display:block;
+padding:0.4rem;
 }
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu
