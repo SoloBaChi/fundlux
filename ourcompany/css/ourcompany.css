@@ -1,1 +1,64 @@
 @import url("../../css/boiler-plate.css");
+@import url("../../aboutus/css/aboutus-page.css");
+@import url("ourteam.css");
+
+
+/*Ourcompany page styles*/
+.ourcompany-page{
+padding:2rem;
+}
+.ourcompany.header{
+background:#010216;
+padding:0.6rem;
+}
+.ourcompany-page h1{
+text-transform:uppercase;
+font-weight:600;
+font-size:var(--xl-head-font);
+}
+/*.ourcompany-page h1:after{
+content:":";
+font-weight:600;
+font-size:var(--xl-font);
+}*/
+.ourcompany-page h2{
+font-size:var(--lg-head-font);
+text-transform:uppercase;
+font-weight:500;
+}
+.ourcompany-page h3{
+font-size:var(--md-head-font);
+text-transform:uppercase;
+font-weight:400;
+}
+.ourcompany-page h4{
+font-size:var(--sm-head-font);
+text-transform:uppercase;
+font-weight:400;
+}
+.ourcompany-page h5{
+font-size:var(--xs-head-font);
+text-transform:uppercase;
+font-weight:300;
+}
+.paragraph p,.ourcompany-page p,.ourcompany-page ul li{
+font-size:var(--md-font);
+font-weight:400;
+line-height:1.8;
+margin-bottom:2rem;
+list-style:square;
+}
+.ourcompany-page ul{
+margin-left:1rem;
+}
+.ourcompany-page ul li::marker{
+color:#d29007;
+font-size:1.4rem;
+}
+h1,h2,h3,h4,h5{
+/*margin-top:1rem;*/
+color:#d29007;
+}
+.ourcompany-page img{
+width:100%;
+}

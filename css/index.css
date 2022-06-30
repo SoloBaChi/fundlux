@@ -535,7 +535,7 @@ padding:0.4rem 1rem;
 color:#fff;
 margin:1.4rem 0 0 0;
 display:inline-block;
- background:linear-gradient(90deg, rgba(214,27,67,1) 0%, rgba(4,11,34,0.9791082814961922) 43%, rgba(203,26,66,1) 100%);
+background:linear-gradient(90deg, rgba(214,27,67,1) 0%, rgba(4,11,34,0.9791082814961922) 43%, rgba(203,26,66,1) 100%);
  text-transform:uppercase;
  font-size:70%;
 }
@@ -548,7 +548,7 @@ display:inline-block;
  margin-bottom:2rem;
  padding:2rem 1rem;
  background: rgb(165,122,56);
-background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%);
+background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%); ;
 }
 .trade-management-section .right .cta-btn{
  padding:0.6rem;
@@ -594,7 +594,7 @@ margin-bottom:1rem;
  box-shadow:1px 0px 2px #fefefe,-1px 0px 2px #fefefe;
  position:relative;
  height:100%;
- color:#999;
+ color:#010216;
  z-index:998;
  margin-bottom:1rem;
 }

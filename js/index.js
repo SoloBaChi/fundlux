@@ -17,20 +17,21 @@ window.addEventListener("scroll",()=>{
    
 
 /*Team members js*/
+// Get the display button elements
 const displayTeamBio = document.querySelectorAll(".read-bio-cta");
+
+// Get the paragrap elements with .bio-text class
 const showBioText = document.querySelectorAll(".bio-text");
 
 for(let member=0;member < displayTeamBio.length; member++){
  displayTeamBio[member].addEventListener("click",function(e){
-  //console.log(e.target.id);
    showBioText.forEach(text => {
-   	if(e.target.id === text.id){
-   	 //console.log(text);
-   	 text.classList.toggle("bio-text-clicked");
-   	}
-   	else{
-   	text.classList.remove("bio-text-clicked");
-   	}
+
+   	//check if the id of the button matches with the targetted paragraph id
+   	(e.target.id === text.id) ? text.classList.toggle("bio-text-clicked") :
+    
+    //if both ids doesn't match return this
+   	  text.classList.remove("bio-text-clicked");
    })
  })
 }
