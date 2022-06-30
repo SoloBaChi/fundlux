@@ -1,0 +1,16 @@
+.legal-contents.ourcompany-page .right{
+ text-align:center;
+ flex:0 0 30%;
+ margin:2rem 0;
+} 
+.legal-contents.ourcompany-page .right a{
+display:block;
+color:#fff;
+background:#7c5608;
+margin-bottom:1rem;
+padding:1.2rem;
+text-transform:capitalize;
+font-weight:300;
+font-size:var(--md-font);
+border-radius:5px;
+}

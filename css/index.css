@@ -117,7 +117,7 @@ padding:0.2rem;
    border:none;
    cursor:pointer;
    margin:1rem auto;*/
-background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%);
+background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%);
 color:#fff;
 width:100%;
 display:block;
@@ -548,12 +548,12 @@ background:linear-gradient(90deg, rgba(214,27,67,1) 0%, rgba(4,11,34,0.979108281
  margin-bottom:2rem;
  padding:2rem 1rem;
  background: rgb(165,122,56);
-background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%); ;
+background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%);
 }
 .trade-management-section .right .cta-btn{
  padding:0.6rem;
-  background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-   color:#010216;
+  background:linear-gradient(90deg, rgba(214,27,67,1) 0%, rgba(4,11,34,0.9791082814961922) 43%, rgba(203,26,66,1) 100%); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+   color:#fff;
    border-radius:5px;
    font-weight:600;
    font-size:90%;
@@ -567,7 +567,7 @@ background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F
    text-transform:uppercase
 }
 .trade-management-section .right .cta-btn:hover{
-background:#fff;
+background:#000;
 transform:scale(0.9);
 }
 .trade-management-section .right{

@@ -75,6 +75,34 @@ width:100%;
 border-radius:inherit;
 height:100%;
 }
+.ourcompany-page .start-financial-freedom{
+margin-top:4rem;
+}
+.ourcompany-page .start-financial-freedom .flex > *{
+text-transform:capitalize;
+font-weight:500;
+font-size:var(--md-font);
+color:#7a5406;
+text-align:center;
+}
+.ourcompany-page .flex .lg-font{
+display:block;
+font-size:var(--xl-font);
+font-weight:700;
+}
+.ourcompany-page .flex .lg-font{
+border:1px solid #ccc;
+border-radius:8px;
+}
+.ourcompany-page .flex p + a{
+border:1px solid #7a5406;
+display:block;
+padding:0.8rem;
+border-radius:8px;
+font-weight:600;
+font-size:var(--lg-font);
+}
+
 
 /*Tablet device*/
 @media(min-width:380px){
@@ -102,5 +130,12 @@ width:200px;
 }
 .ourcompany-team > * {
 flex:1 1 22%;
-
+}
+.ourcompany-page .flex{
+justify-content:center;
+align-items:center;
+}
+.ourcompany-page .flex p + a{
+flex:0 0 20%;
+}
 }

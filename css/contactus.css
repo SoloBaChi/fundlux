@@ -1,8 +1,8 @@
-.header-wrapper.reachus-wrapper{
+/*.header-wrapper.reachus-wrapper{
 background:url("../images/market-bg-pic.svg") center no-repeat;
 background-size:cover;
 }
-
+*/
 .reachus-main-section{
 margin-top:-160px;
 }
@@ -70,7 +70,7 @@ color:#000;
 }
 .customer-feedback .chat-btn{
 font-size:80%;
-background:#f00;
+background:#010216;
 width:70px;
 font-weight:400;
 color:#fff;
