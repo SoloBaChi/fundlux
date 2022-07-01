@@ -1,1 +1,69 @@
-@import url("../../css/boiler-plate.css");
+@import url("../../aboutus/css/aboutus-page.css");
+
+
+
+
+/*what we invest in styles*/
+.whatweinvestin-page{
+padding:2rem;
+}
+.whatweinvestin.header{
+background:#010216;
+padding:0.6rem;
+}
+.whatweinvestin-page h1{
+text-transform:uppercase;
+font-weight:600;
+font-size:var(--xl-head-font);
+}
+/*.whatweinvestin-page h1:after{
+content:":";
+font-weight:600;
+font-size:var(--xl-font);
+}*/
+.whatweinvestin-page h2{
+font-size:var(--lg-head-font);
+text-transform:uppercase;
+font-weight:500;
+}
+.whatweinvestin-page h3{
+font-size:var(--md-head-font);
+text-transform:uppercase;
+font-weight:400;
+}
+.whatweinvestin-page h4{
+font-size:var(--sm-head-font);
+text-transform:uppercase;
+font-weight:400;
+}
+.whatweinvestin-page h5{
+font-size:var(--xs-head-font);
+text-transform:uppercase;
+font-weight:300;
+}
+.paragraph p,.whatweinvestin-page p,.whatweinvestin-page ul li{
+font-size:var(--md-font);
+font-weight:400;
+line-height:1.8;
+margin-bottom:2rem;
+list-style:square;
+}
+.whatweinvestin-page ul{
+margin-left:1rem;
+}
+.whatweinvestin-page ul li::marker{
+color:#d29007;
+font-size:1.4rem;
+}
+h1,h2,h3,h4,h5{
+/*margin-top:1rem;*/
+color:#d29007;
+}
+.whatweinvestin-page img{
+width:100%;
+}
+/*whatweinvestin caption text*/
+.whatweinvestin-text-caption{
+color:#785205;
+font-size:var(--md-font);
+}

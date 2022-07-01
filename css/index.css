@@ -462,19 +462,7 @@ padding:10rem 0  0 0;
 }
 
 /* last section before footer  section*/
-.closing-section{
-/* border:1px solid red; */
-position: relative;
-}
-.empty-box-1,.empty-box-2{
-height:100px;
-}
-.empty-box-1{
-background:#ddd;
-}
-.empty-box-2{
-background:coral;
-}
+
 
 
 /*affordable-pkgs-section*/
@@ -647,6 +635,61 @@ top:85%;
 
 
 
+/*Testimonial section styles*/
+.testimonial-section{
+padding:0.2rem 2rem;
+} 
+.testimonial-section > *{
+border:1px solid #999;
+border-radius:8px;
+box-shadow:2px 1px 2px rgba(0,0,0,0.25),-2px -1px 2px rgba(0,0,0,0.25);
+padding:1.4rem;
+margin-bottom:1rem;
+transform:scale(0.9);
+transform-origin:center center;
+transition:0.5s ease-out;
+}
+.testimonial-section > *:hover{
+transform:scale(1);
+background:#010216;
+color:#fff;
+}
+.testimonial-top-header{
+text-align:center;
+font-weight:500;
+font-size:var(--lg-font);
+color:#010216;
+}
+.testimonial-card .top-content{
+text-align:center;
+margin-bottom:0.8rem;
+}
+.testimonial-card .img-container{
+ border-radius:50%;
+ height:100px;
+ width:100px;
+ display:inline-block;
+ border:3px outset #eee;
+ }
+.testimonial-card .img-container img{
+width:100%;
+border-radius:inherit;
+}
+
+.testimonial-card h2{
+font-weight:400;
+font-size:var(--md-font);
+margin-left:0.2rem;
+text-transform:capitalize;
+color:#f6aa0f;
+}
+.testimonial-card .bottom-content p{
+font-size:var(--sm-font);
+font-weight:300;
+}
+.testimonial-section > *:hover .bottom-content p{
+color:#fff;
+}
 
 /*last section styles*/
 .last-section{
@@ -843,31 +886,8 @@ justify-content:space-evenly;
 .media-invest-card{
 flex-basis:22%;
 }
-.media-empty-box{
-flex-basis:48%;
-}
-/* section styles */
-.closing-section{
-position: relative;
-margin-top:5rem;
-}
-.empty-box-2{
-position:absolute;
-top:50%;
-left:50%;
-z-index:1000;
-width:30%;
-height:240px;
-transform: translate(-50%,-50%);
-/* the transform property above is same as the code written below */
-/* margin-top:-130px;
-margin-left:-20%; */
-}
-.empty-box-1{
-width:80%;
-margin:0 auto;
-height:200px;
-}
+
+
 
 /*affordable-pkgs-section*/
 .affordable-pkgs-section .card-list-section{
@@ -878,6 +898,8 @@ gap:4%;
 .affordable-pkgs-section .box{
 flex:1 1 100%;
 }
+
+
 
 /*trade-management-section*/
 .trade-management-section{
@@ -910,6 +932,26 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 }
+
+
+/*Testimonial section styles*/
+.testimonial-section{
+display:flex;
+flex-flow:row wrap;
+gap:4%;
+} 
+.testimonial-section > *{
+flex-basis:100%;
+}
+
+.testimonial-card .top-content{
+display:flex;
+flex-flow:row wrap;
+justify-content:center;
+align-items:center;
+gap:4%;
+}
+
 
 .aboutus-index-line{
  display:inline-block;
@@ -1006,6 +1048,11 @@ flex:48%;
 .last-section div > h3{
 margin:0;
 text-align:left;
+}
+
+/*Testimonial section*/
+.testimonial-section > *{
+flex:48%;
 }
 
 }

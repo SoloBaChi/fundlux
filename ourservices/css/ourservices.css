@@ -1,1 +1,136 @@
 @import url("../../css/boiler-plate.css");
+@import url("../../aboutus/css/aboutus-page.css");
+@import url("../../ourcompany/css/ourcompany.css");
+
+
+
+/*Oursrvices page styles*/
+@import url("../../css/boiler-plate.css");
+@import url("../../aboutus/css/aboutus-page.css");
+@import url("ourteam.css");
+@import url("legal.css");
+
+
+/*Ourcompany page styles*/
+.ourservices-page{
+padding:2rem;
+}
+.ourservices.header{
+background:#010216;
+padding:0.6rem;
+}
+.ourservices-page h1{
+text-transform:uppercase;
+font-weight:600;
+font-size:var(--xl-head-font);
+}
+/*.ourservices-page h1:after{
+content:":";
+font-weight:600;
+font-size:var(--xl-font);
+}*/
+.ourservices-page h2{
+font-size:var(--lg-head-font);
+text-transform:uppercase;
+font-weight:500;
+}
+.ourservices-page h3{
+font-size:var(--md-head-font);
+text-transform:uppercase;
+font-weight:400;
+}
+.ourservices-page h4{
+font-size:var(--sm-head-font);
+text-transform:uppercase;
+font-weight:400;
+}
+.ourservices-page h5{
+font-size:var(--xs-head-font);
+text-transform:uppercase;
+font-weight:300;
+}
+.paragraph p,.ourservices-page p,.ourservices-page ul li{
+font-size:var(--md-font);
+font-weight:400;
+line-height:1.8;
+margin-bottom:2rem;
+list-style:square;
+}
+.ourservices-page ul{
+margin-left:1rem;
+}
+.ourservices-page ul li::marker{
+color:#d29007;
+font-size:1.4rem;
+}
+h1,h2,h3,h4,h5{
+/*margin-top:1rem;*/
+color:#d29007;
+}
+.ourservices-page img{
+width:100%;
+}
+
+/*spans accross multiple pages*/
+.ourservices-page .start-financial-freedom{
+margin-top:4rem;
+}
+.ourservices-page .start-financial-freedom .flex > *{
+text-transform:capitalize;
+font-weight:500;
+font-size:var(--md-font);
+color:#7a5406;
+text-align:center;
+}
+.ourservices-page .flex .lg-font{
+display:block;
+font-size:var(--xl-font);
+font-weight:700;
+}
+.ourservices-page .flex .lg-font{
+border:1px solid #ccc;
+border-radius:8px;
+}
+.ourservices-page .flex p + a{
+border:1px solid #7a5406;
+display:block;
+padding:0.8rem;
+border-radius:8px;
+font-weight:500;
+font-size:var(--md-font);
+}
+.ourservices-page .want-tosee-more p + a,.ourservices-page .want-tosee-more p{
+border:1px solid #7a5406;
+display:block;
+padding:0.8rem;
+border-radius:8px;
+font-weight:500;
+font-size:var(--md-font);
+color:#7a5406;
+text-align:center;
+text-transform:capitalize;
+}
+.ourservices-page .want-tosee-more p{
+text-align:left;
+border:none;
+}
+
+/*Tablet View*/
+@media(min-width:380px){
+
+}
+
+
+/*Desktop view*/
+@media(min-width:650px){
+.ourservices-page .flex{
+justify-content:center;
+align-items:flex-start;
+}
+.ourservices-page .start-financial-freedom .flex{
+align-items:center;
+}
+.ourservices-page .flex p + a{
+flex:0 0 20%;
+}
+}
