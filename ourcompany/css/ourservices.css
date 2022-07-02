@@ -1,0 +1,67 @@
+.ourservice-contents{
+border:2px solid coral;
+}
+.ourservice-contents .flex.services{
+margin-bottom:2rem;
+border:1px outset #ccc;
+padding:1rem;
+border-radius:12px 0px 0px 12px;
+display:flex;
+flex-flow:column;
+}
+.ourservice-contents .flex.services a{
+text-align:center;
+text-transform:capitalize;
+font-weight:400;
+font-size:var(--lg-font);
+color:#a17518;
+transition:0.3s ease-in;
+transform:translateY(-10%);
+}
+.ourservice-contents .flex.services a:hover{
+background:#a17518;
+border:none;
+color:#ecc575;
+transform:translateY(0);
+}
+.ourservice-contents .flex.services .right img{
+order:1;
+}
+.ourservice-contents .flex.services .left.not-img{
+order:2;
+}
+.ourservice-contents .flex.services .right img,.ourservice-contents .flex.services .left img{
+width:100%;
+border-radius:10px;
+}
+
+
+
+
+
+
+
+/*Tablet devices*/
+@media(min-width:380px){
+.ourservice-contents .flex.services a{
+width:60%;
+}	
+}
+
+
+/*Desktop Devices*/
+@media(min-width:650px){
+.ourservice-contents .flex.services{
+flex-direction:row;
+gap:4%;	
+}
+.ourservice-contents .flex.services .right img{
+order:0;
+}
+.ourservice-contents .flex.services .left.not-img{
+order:0;
+}
+.ourservice-contents .flex.services .right img,.ourservice-contents .flex.services .left img{
+height:20em;
+}
+}

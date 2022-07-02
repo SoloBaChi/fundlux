@@ -51,7 +51,7 @@ font-weight:300;
 }
 .paragraph p,.ourservices-page p,.ourservices-page ul li{
 font-size:var(--md-font);
-font-weight:400;
+font-weight:300;
 line-height:1.8;
 margin-bottom:2rem;
 list-style:square;
