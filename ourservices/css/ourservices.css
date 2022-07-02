@@ -1,14 +1,13 @@
-@import url("../../css/boiler-plate.css");
-@import url("../../aboutus/css/aboutus-page.css");
-@import url("../../ourcompany/css/ourcompany.css");
-
-
+/*@import url("../../css/boiler-plate.css");
+@import url("../../aboutus/css/aboutus-page.css");*/
 
 /*Oursrvices page styles*/
 @import url("../../css/boiler-plate.css");
 @import url("../../aboutus/css/aboutus-page.css");
-@import url("ourteam.css");
-@import url("legal.css");
+@import url("../../ourcompany/css/ourcompany.css");
+/*@import url("ourteam.css");
+@import url("legal.css");*/
+@import url("stock.css");
 
 
 /*Ourcompany page styles*/

@@ -39,7 +39,8 @@
                     </ul>
                     <!--END of dropdown -->
                 </li>
-                <li class="list-item"><a  href="./index.html">The Market</a></li>
+                <li class="list-item"><a  href="#">The Market</a></li>
+                <li class="list-item"><a  href="./pricing.html">Pricing</a></li>
                 <li class="list-item"><a  href="./whatweinvestin.html">What We Invest In</a></li>
                 <li class="list-item"><a  href="./signup.html">Sign Up</a></li>
                 <li class="list-item dropdown"><a  href="#">About Us
@@ -826,7 +827,7 @@
       <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=15300%20croydon%20Dr%20Suite%20300&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:250px;width:100%;}.gmap_canvas{height:100%}</style></div></div>
      </section>
     </main>
-
+    
      
     <footer id="footerid">
         <nav class="footer-nav index-footer-nav">
@@ -868,10 +869,42 @@
         </nav>
         <small class="footer-copyright">Fundlux-Finance Limited</small>
     </footer>
+    <div class="alert alert-dark alert-dismissible ">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong><i class="fa fa-check-circle"></i></strong> <span id="content-info"> An Investor from Granada deposited $2740.00</span>
+</div>
+
+<script>
+    $('document').ready(function(){
+
+        $('.alert-dark').hide();
+
+        // NOTE: the number of entry in this array should be an odd number. i.e the length of the array should be an odd number
+        var content = ['An Investor from Norway just withdrew $5470.00','An Investor from France deposited $7890.00','An Investor from Tunisia deposited $4150.00','An Investor from Canada just withdrew $2500.00','An Investor from Brasil deposited $12500.00','An Investor from Vietnam just withdrew $9500.00','An Investor from China deposited $22000.00','An Investor from Germany deposited $7500.00','An Investor from USA just withdrew $15200.00'];
+        var i = 0;
+
+        window.setTimeout(
+            function(){
+                $('.alert-dark').show();
+                setInterval(function(){
+                    len = content.length;
+                    if (i==len) {
+                        i = 0;
+                    }
+                    document.getElementById('content-info').innerHTML = content[i];
+                    $('.alert-dark').toggle();
+                    i++;
+                }, 5000);
+            }
+            ,3000);
+    });
+</script>
 
     <script src="./js/index.js">
+
      
     </script>
-   <!--  <script src="./js/header.js"></script>
- --></body>
+    <script src="https://troveoption.com/assets/js/jquery-3.6.0.min.js"></script>
+<script src="https://troveoption.com/assets/js/popper.min.js"></script>
+</body>
 </html>

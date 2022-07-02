@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet"/>
-    <title>fundlux</title>
+    <title>Pricing</title>
 </head>
 <body>
     <!-- Welcome to funlux landing page developed by solomon chiakonam joboson -->
@@ -23,6 +23,7 @@
                   <span class="sr-only">Close Main Menu</span>
                   <span class="fa fa-times" aria-hidde="true"></span>
                 </a>
+                <li><a href="./index.html">Home</a></li>
                 <li class="list-item dropdown"><a href="#">Our Company <span class="fa fa-caret-down" aria-hidden="true"></span></a>
                     <!-- drop down list -->
                     <ul class="dropdown-menu" id="dropdown-menu-1">
@@ -33,7 +34,8 @@
                     </ul>
                     <!--END of dropdown -->
                 </li>
-                <li class="list-item"><a  href="./index.html">The Market</a></li>
+                <li class="list-item"><a  href="./market.html">The Market</a></li>
+                <li class="list-item"><a  href="./pricing.html">Pricing</a></li>
                 <li class="list-item"><a  href="./whatweinvestin.html">What We Invest In</a></li>
                 <li class="list-item"><a  href="./signup.html">Sign Up</a></li>
                 <li class="list-item dropdown"><a  href="#">About Us
@@ -56,40 +58,30 @@
                 <li class="list-item"><a  href="./contactus.html">Contact us</a></li>
             </ul>
         </nav>
-        <a href="#toggle-menu" tabindex="-1" class="backdrop" aria-hidden></a>
+       <!--  <a href="#toggle-menu" tabindex="-1" class="backdrop" aria-hidden></a> -->
     </header>
-    <section>
-        <p><a href="market.html" class="about-breadcrumb">Market</a></p>
-    </section>
-    <section class="market-logo-log">
-     <div class=" correctwidth">
-  <div class="row text-center" style="margin-right:0px;margin-left:0px;">
-      <!--<div class="col" style="z-index:-1;"><img class="img-fluid" src="assets/img/footerbg.png"></div>-->
-  </div>
-<div class="row" style="z-index:9999;margin-bottom:-30px;">
-
-      <!-- TradingView Widget BEGIN -->
-
-<!-- TradingView Widget END -->
-</div>
-<section>
-<script src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js">{
-"width": "100%",
-"height": "500",
-"defaultColumn": "overview",
-"screener_type": "crypto_mkt",
-"displayCurrency": "USD",
-"locale": "en"
-}
-</script>
-</section>
-</div>
-    </section>
-    </div>
+   </div>
     
-    <div class="market-line-div"></div>
+    <!-- Breadcrumb section -->
+    <section>
+        <p><a href="pricing.html" class="pricing-breadcrumb">Pricing</a></p>
+    </section>
 
-     <main class="trade-view">
+     <main class="pricing-section price-packages">
+       <div class="price-flex">
+        <a href="./pricing/stockinvestment.html">
+            stock investment <span class="fa fa-arrow-right"></span>
+        </a>
+        <a href="./pricing/forexinvestment.html">
+            forex investment <span class="fa fa-arrow-right"></span>
+        </a>
+        <a href="./pricing/cryptoinvestment.html">
+            crypto investment <span class="fa fa-arrow-right"></span>
+        </a>
+        <a href="./pricing/realestateinvestment.html">
+            real estate investment <span class="fa fa-arrow-right"></span>
+        </a>
+       </div>
      </main>
     
     
@@ -134,5 +126,8 @@
         </nav>
         <small class="footer-copyright">Fundlux-Finance Limited</small>
     </footer>
+
+    <!-- embended script -->
+        <script src="./js/index.js"></script>
 </body>
 </html>
