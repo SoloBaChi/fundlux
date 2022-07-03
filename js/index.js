@@ -5,15 +5,6 @@
       },1000)
       });
 
-const scrollTop = document.getElementById("main-menu");
-window.addEventListener("scroll",()=>{
- if(scrollY > 307){
- 	scrollTop.classList.add("main-menu-scrollTop");
- }
- else{
- scrollTop.classList.remove("main-menu-scrollTop");
- }
-})
    
 
 /*Team members js*/
@@ -36,3 +27,28 @@ for(let member=0;member < displayTeamBio.length; member++){
  })
 }
 
+
+// scrollTop js
+
+const scrollToTop = document.getElementById("scrollTop");
+ 
+const scrollTop = document.getElementById("main-menu");
+window.addEventListener("scroll",()=>{
+ if(scrollY > 307){
+   scrollTop.classList.add("main-menu-scrollTop");
+   scrollToTop.style.visibility = "visible";
+ }
+ else{
+ scrollTop.classList.remove("main-menu-scrollTop");
+ scrollToTop.style.visibility = "hidden";
+ }
+})
+
+
+ scrollToTop.addEventListener("click",function(){
+  if(window.pageYOffset === window.scrollY){
+   window.scroll(0,0)
+  }
+ })
+
+ // animation onScroll

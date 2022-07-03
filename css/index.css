@@ -24,19 +24,50 @@ font-size:4rem;
 font-weight:800;
 color:#8C6005;
 }
-/*.loading-text{
-position:absolute;
-bottom:100px;
-left:0;
-width:100%;
-display:block;
-font-family:cursive;
-font-size:1.4rem;
-color:green;
-}*/
+
 .stop-loading{
  display:none;
 }
+
+/*scrollTop styles*/
+/*.scrollTop{
+position:relative;
+}*/
+#scrollTop{
+position:fixed;
+right:5px;
+bottom:50px;
+display:flex;
+height:45px;
+width:45px;
+background:orange;
+border-radius:50%;
+cursor:pointer;
+box-shadow:0px 1px 3px rgba(0,0,0,0.7);
+z-index:2002;
+visibility:hidden;
+animation:bounce-up 2s infinite;
+}
+
+@keyframes bounce-up{
+  0%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(20%);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
+
+#scrollTop .fa{
+margin:auto;
+color:#fff;
+font-weight:600;
+font-size:var(--md-font);
+}
+
 
 .header-section.banner-section{
 background:linear-gradient(116.87deg, #9F8C45 8.03%, #FFFFFF 37.42%, #EA8FD6 66.81%);
@@ -107,17 +138,6 @@ padding:0.2rem;
   line-height:1.5;
  }
   .stock-investment .cta-btn{
-  /* padding:0.6rem;
-   background:#BF8C09;
-   background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%);   warning: gradient uses a rotation that is not supported by CSS and may not behave as expected ;
-   color:#fff;
-   border-radius:6px;
-   font-weight:500;
-   font-size:65%;
-   width:120px;
-   border:none;
-   cursor:pointer;
-   margin:1rem auto;*/
 background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%);
 color:#fff;
 width:100%;
@@ -491,13 +511,13 @@ margin:1rem;
 .affordable-pkgs-section .box{
 border:1px solid #fefefe;
 border-radius:8px;
-background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%);
+background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%);
 position:relative;
 padding:0.8rem;
 margin:0 0 1.4rem 0;
 }
 .affordable-pkgs-section .box .box-top{
-background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%);
+background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%);
 color:#fff;
 padding:0.2rem;
 border-radius:8px 8px  0 0;
@@ -519,14 +539,15 @@ font-weight:300;
 .affordable-pkgs-section .box .cta-btn{
 box-shadow:none;
 border-radius:8px;
-border:none;
-padding:0.4rem 1rem;
+border:1px solid #ddd;
+padding:0.6rem 1rem;
 color:#fff;
 margin:1.4rem 0 0 0;
 display:inline-block;
-background:linear-gradient(90deg, rgba(214,27,67,1) 0%, rgba(4,11,34,0.9791082814961922) 43%, rgba(203,26,66,1) 100%);
- text-transform:uppercase;
- font-size:70%;
+background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%);
+text-transform:uppercase;
+ font-size:80%;
+ font-weight:600;
 }
 
 
@@ -536,12 +557,11 @@ background:linear-gradient(90deg, rgba(214,27,67,1) 0%, rgba(4,11,34,0.979108281
  font-weight:300;
  margin-bottom:2rem;
  padding:2rem 1rem;
- background: rgb(165,122,56);
-background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%);
+ background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%);
 }
 .trade-management-section .right .cta-btn{
  padding:0.6rem;
-  background:linear-gradient(90deg, rgba(214,27,67,1) 0%, rgba(4,11,34,0.9791082814961922) 43%, rgba(203,26,66,1) 100%); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+   background:radial-gradient(60.96% 233.66% at 19.41% -27.87%, #BF8C09 0%, #DECB1F 51.04%, #7C4B00 100%);
    color:#fff;
    border-radius:5px;
    font-weight:600;

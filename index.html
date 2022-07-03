@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="./recent-font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet"/>
@@ -42,7 +43,6 @@
                 <li class="list-item"><a  href="#">The Market</a></li>
                 <li class="list-item"><a  href="./pricing.html">Pricing</a></li>
                 <li class="list-item"><a  href="./whatweinvestin.html">What We Invest In</a></li>
-                <li class="list-item"><a  href="./signup.html">Sign Up</a></li>
                 <li class="list-item dropdown"><a  href="#">About Us
                     <span class="fa fa-caret-down" aria-hidden="true"></span></a>
 
@@ -59,7 +59,8 @@
                     <!--END of dropdown -->
 
                 </li>
-                <li class="list-item"><a  href="./signin.html">Login</a></li>
+                <li class="list-item"><a  href="./signup.html">Sign Up</a></li>
+                <li class="list-item signin-cta"><a  href="./signin.html">Login</a></li>
                 <li class="list-item"><a  href="./contactus.html">Contact us</a></li>
             </ul>
         </nav>
@@ -122,7 +123,7 @@
 <!-- other sections -->
       <!-- Trade and invest section bregins -->
       <section class="invest-and-trade-section top">
-        <div class="stock-investment">
+        <div class="stock-investment text" data-aos="fade-down">
           <h3>Stocks and ETFs</h3>
           <p>Invest in stocks with 0% commission.
             Buy in bulk or just a fraction.
@@ -131,7 +132,7 @@
            Invset in Stocks
           </a>
         </div>
-        <div class="stock-investment order-3">
+        <div class="stock-investment order-3 text" data-aos="fade-down">
           <h3>Buy Cryptocurrencies</h3>
           <p>Buy, sell and store Bitcoin and other leading cryptos with ease
           </p>
@@ -139,7 +140,7 @@
           Buy Cryptocurrencies
           </a>
         </div>
-        <div class="stock-investment">
+        <div class="stock-investment text" data-aos="fade-up">
           <h3>CFD Trading</h3>
           <p>Go long or short on FX from just 1 pip trade commodities and indices with flexible leverage
           </p>
@@ -150,6 +151,7 @@
       </section>
 
   <section class="trade-invest-bottom">
+<div class="text" data-aos="fade-left">
   <div class="trade-invest-text">
     <p>
       <b class="bold-text">Trade and invest</b> in top stocks and ETFs. Trade currency pairs, Indices and Commodities via CFDs. Investing in the financial markets has never been easier.
@@ -174,7 +176,8 @@
       </script>
     </div>
   </div>
-  <div class="trade-view-container">
+</div>
+  <div class="trade-view-container text" data-aos="fade-right">
     <style>
       .tradingview-widget-container{
         display: none;
@@ -294,7 +297,7 @@
     <section class="offered-services">
         <h2>What We Do</h2>
         <div class="service-lists-cards">
-            <figure class="card-container">
+            <figure class="card-container text" data-aos="slide-right">
                 <img src="./images/binary.svg" width="30" height="30"/>
                 <h3>Binary Option</h3>
                 <figcaption>
@@ -302,7 +305,7 @@
                     <a class="invest-button" href="./signup.html">Invest</a>
                 </figcaption>
             </figure>
-            <figure class="card-container">
+            <figure class="card-container text" data-aos="slide-down">
                 <img src="./images/etf-icon.svg" width="30" height="30">
                 <h3>Stocks &amp; ETF</h3>
                 <figcaption>
@@ -310,7 +313,7 @@
                     <a class="invest-button" href="./signup.html">Invest</a>
                 </figcaption>
             </figure>
-            <figure class="card-container">
+            <figure class="card-container text" data-aos="slide-left">
                 <img src="./images/data-icon.svg" width="30" height="30"/>
                 <h3>Binary Option</h3>
                 <figcaption>
@@ -461,7 +464,7 @@
          <div class="index-line-div"></div>
 
          <div class="latest-transaction">
-           <div class="latest latest-deposits">
+           <div class="latest latest-deposits text" data-aos="slide-right">
              <p>Latest Deposits</p>
              <div class="latest-items">
                <figure>
@@ -498,7 +501,7 @@
                </figure>
              </div>
            </div>
-           <div class="latest latest-withdrawals">
+           <div class="latest latest-withdrawals text" data-aos="slide-left">
              <p>Latest Withdrawals</p>
              <div class="latest-items">
                <figure>
@@ -557,7 +560,7 @@
        <p><span class="aboutus-index-line"></span>
         choose your preferable plans for investment<span class="aboutus-index-line"></span></p>
         <div class="card-list-section">
-          <div class="box">
+          <div class="box text" data-aos="slide-right">
             <div class="box-top">
             <h4>Starter</h4>
             <p>Weekly 100% for 4 times</p>
@@ -582,7 +585,7 @@
              </div>
             <a class="cta-btn" href="./signup.html">sign up</a>
           </div>
-          <div class="box">
+          <div class="box text" data-aos="slide-left">
             <div class="box-top">
             <h4>Silver</h4>
             <p>Weekly 100% for 4 times</p>
@@ -607,7 +610,7 @@
              </div>
             <a class="cta-btn" href="./signup.html">sign up</a>
           </div>
-          <div class="box">
+          <div class="box text" data-aos="slide-right">
             <div class="box-top">
             <h4>Gold</h4>
             <p>Weekly 100% for 4 times</p>
@@ -632,7 +635,7 @@
              </div>
             <a class="cta-btn" href="./signup.html">sign up</a>
           </div>
-          <div class="box">
+          <div class="box text" data-aos="slide-left">
             <div class="box-top">
             <h4>Platinum</h4>
             <p>Weekly 100% for 4 times</p>
@@ -749,12 +752,12 @@
     <section>
      <h1 class="testimonial-top-header"><span class="aboutus-index-line"></span>Testimonials<span class="aboutus-index-line"></span></h1>
      <div class="testimonial-section">
-       <div class="testimonial-card">
+       <div class="testimonial-card text" data-aos="zoom-in">
         <div class="top-content">
         <div class="img-container">
           <img src="./images/ourteam-img1.jpg" alt="testimonial image">
         </div>
-        <h2 class="commentor">amenda cerny</h2>
+        <h2 class="commentor">&commat;amenda cerny</h2>
         </div>
         <div class="bottom-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -762,12 +765,12 @@
         </div>
        </div>
 
-       <div class="testimonial-card">
+       <div class="testimonial-card text" data-aos="zoom-in">
         <div class="top-content">
         <div class="img-container">
           <img src="./images/ourteam-img2.jpg" alt="testimonial image">
         </div>
-        <h2 class="commentor">Harry Lord</h2>
+        <h2 class="commentor">&commat;Harry Lord</h2>
         </div>
         <div class="bottom-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -775,12 +778,12 @@
         </div>
        </div>
 
-       <div class="testimonial-card">
+       <div class="testimonial-card text" data-aos="zoom-in">
         <div class="top-content">
         <div class="img-container">
           <img src="./images/ourteam-img4.jpg" alt="testimonial image">
         </div>
-        <h2 class="commentor">gin mark</h2>
+        <h2 class="commentor">&commat;gin mark</h2>
         </div>
         <div class="bottom-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -788,12 +791,12 @@
         </div>
        </div>
 
-       <div class="testimonial-card">
+       <div class="testimonial-card text" data-aos="zoom-in">
         <div class="top-content">
         <div class="img-container">
           <img src="./images/ourteam-img3.jpg" alt="testimonial image">
         </div>
-        <h2 class="commentor">john cey</h2>
+        <h2 class="commentor">&commat;john cey</h2>
         </div>
         <div class="bottom-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -827,6 +830,13 @@
       <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=15300%20croydon%20Dr%20Suite%20300&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:250px;width:100%;}.gmap_canvas{height:100%}</style></div></div>
      </section>
     </main>
+    
+      <!-- scrollTotop arrow -->
+    <section class="scrollTop">
+      <div id="scrollTop">
+      <span class="fa fa-arrow-up"></span>
+    </div>
+    </section>
     
      
     <footer id="footerid">
@@ -869,9 +879,15 @@
         </nav>
         <small class="footer-copyright">Fundlux-Finance Limited</small>
     </footer>
-    <script src="./js/index.js">
-
-     
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+     {
+      offset:100, 
+      duration:1000,
+    }
+      );
     </script>
 </body>
 </html>
