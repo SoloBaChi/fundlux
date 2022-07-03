@@ -30,9 +30,9 @@ color:#8C6005;
 }
 
 /*scrollTop styles*/
-/*.scrollTop{
+.scrollTop{
 position:relative;
-}*/
+}
 #scrollTop{
 position:fixed;
 right:5px;
