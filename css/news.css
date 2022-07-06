@@ -1,0 +1,22 @@
+.news-main-section{
+padding:0 2rem;
+}
+.news-breadcrumb{
+background:#001029;
+color:#fff;
+display:inline;
+font-weight:600;
+font-size:2.5rem;
+display:block;
+text-align:left;
+padding:1rem;
+}
+.news{
+margin-top:1rem;
+}
+.news p::first-letter{
+color:green;
+text-transform:uppercase;
+font-weight:600;
+font-size:var(--md-font);
+}

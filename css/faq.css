@@ -1,0 +1,23 @@
+
+.faq-main-section{
+padding:0 2rem;
+}
+.faq-breadcrumb{
+background:#001029;
+color:#fff;
+display:inline;
+font-weight:600;
+font-size:2.5rem;
+display:block;
+text-align:left;
+padding:1rem;
+}
+.qst{
+margin-top:1rem;
+}
+.qst p::first-letter{
+color:red;
+text-transform:uppercase;
+font-weight:600;
+font-size:var(--md-font);
+}
