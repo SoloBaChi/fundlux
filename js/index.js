@@ -1,4 +1,15 @@
- const documentLoader = document.querySelector(".loading-page");
+  //accordion script
+  const accordion = document.querySelectorAll(".accordion-header");
+  for(let i=0; i< accordion.length; i++){
+   accordion[i].addEventListener("click",function(e){
+    e.target.classList.toggle("active");
+   });
+  }
+ 
+ 
+ 
+ 
+  const documentLoader = document.querySelector(".loading-page");
       window.addEventListener('load',()=>{
       setTimeout(()=>{
       documentLoader.classList.add("stop-loading");
@@ -42,13 +53,14 @@ window.addEventListener("scroll",()=>{
  scrollTop.classList.remove("main-menu-scrollTop");
  scrollToTop.style.visibility = "hidden";
  }
-})
+});
 
 
  scrollToTop.addEventListener("click",function(){
   if(window.pageYOffset === window.scrollY){
    window.scroll(0,0)
   }
- })
+ });
 
  // animation onScroll
+
